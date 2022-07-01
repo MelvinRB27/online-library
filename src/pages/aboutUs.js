@@ -29,7 +29,7 @@ const AboutUs = () => (
                 </div>
 
                 <div className="containerNameMelvin">
-                    <h5 className="footer-company-about"> Melvin Ruiz Batista </h5>
+                    <h5 className="footer-company-about"> Melvin Ruiz Batista Jimenez</h5>
                     
                     <p className="footer-company-about"> 
                         Software developer with knowledge in Java, c#, 
