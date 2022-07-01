@@ -1,0 +1,63 @@
+.titlePage{
+    text-align: center;    
+}
+
+.containerParagraph{
+    margin-left: 37%;
+    width: 25%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid green;
+}
+
+.containerParagraph p{
+    color: white;
+    text-align: center;
+}
+
+.containerPhotoMelvin{
+    display: inline-block;
+    width: 25%;
+    margin-left: 15%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid green;
+}
+
+.containerPhotoJose{
+    padding-top: 3.8%;
+    display: inline-block;
+    width: 25%;
+    margin-left: 15%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid green;
+}
+
+.containerPerfil img{
+    margin-left: 32%;
+    width: 50%;
+    padding: 2%;
+}
+
+.containerNameMelvin h5, p{
+    text-align: center;
+    color: white;
+    padding: 0%;
+}
+.iconPerfil{
+    text-align: center;
+}
+
+.iconPerfil a{
+    display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,23 @@
+ <Routes>
+
+      <Route path="/home" element={<Home />} />
+      <Route path="/books" element={<Books/>}/>
+      <Route path="/offers" element={<Offers />} />
+      <Route path="/aboutUs" element={<AboutUs />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+
+    </Routes>
+
+
+
+    <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/books">Books</NavLink></li>
+                <li><NavLink to="/offers">Offers</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+                <li><NavLink to="/aboutUs">Us</NavLink></li>
+                <li><NavLink to="/login">Login</NavLink></li>
+                <li><NavLink to="/register">Register</NavLink></li>
+            </ul>

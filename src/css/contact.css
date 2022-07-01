@@ -1,0 +1,55 @@
+.titlePage{
+    text-align: center;    
+}
+
+.contactNumber{
+    display: inline-block;
+}
+
+.formContact{
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+    background-color: rgba(255,255,255,0.13);
+    position:relative;
+    border-radius: 10px;
+    left: 36%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 50px 100px;
+}
+.formContact label{
+    display: block;
+    color: white;
+}
+.formContact input{   
+    color: white;
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.formContact textarea{
+    color: white;
+    height: 45%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.formContact button{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: blue;
+    border-radius: 5px;
+
+}

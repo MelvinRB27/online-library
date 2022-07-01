@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//pages
+import Home from './pages/home';
+import Books from './pages/books';
+import Offers from './pages/offers';
+import AboutUs from './pages/aboutUs';
+import Contact from './pages/contact';
+import Login from './pages/login';
+import Register from './pages/register';
+
+
+
+import { Routes, Route} from "react-router-dom";
+
+const App = () =>  (
+  <>
+    <Header/>
+    <br/>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/books" element={<Books/>}/>
+      <Route path="/offers" element={<Offers />} />
+      <Route path="/aboutUs" element={<AboutUs />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+    <br/>
+    <br/>
+    <Footer />
+  </>
+);
+
 
 export default App;
