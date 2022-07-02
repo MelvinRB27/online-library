@@ -1,23 +1,47 @@
 .titlePage{
     text-align: center;    
 }
+.containerContact{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+.containerContact h2{
+    text-align: center;
+}
+.contactNE{
+    display: inline-table;
+    margin-left: 10%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid green;
+}
 
-.contactNumber{
-    display: inline-block;
+.contactNE h5{
+    text-align: center;
+    color: red;
 }
 
 .formContact{
-    display: inline-block;
-    height: 600px;
+    display: inline-table;
+    height: 800px;
     width: 600px;
     background-color: rgba(255,255,255,0.13);
     position:relative;
     border-radius: 10px;
-    left: 36%;
+    left: 15%;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     padding: 50px 100px;
 }
+
+.formContact img{
+    border-radius: 50%;
+    width: 40%;
+    padding: 0%;
+    margin-left: 25%;
+}
+
 .formContact label{
     display: block;
     color: white;
@@ -26,7 +50,7 @@
     color: white;
     display: block;
     height: 50px;
-    width: 100%;
+    width: 400px;
     background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 0 10px;
@@ -49,7 +73,27 @@
     display: block;
     font-size: 15px;
     font-weight: 600;
-    background-color: blue;
     border-radius: 5px;
+    margin-left: 35%;
+}
 
+@media (max-width: 880px) {
+
+    .contactNE{
+        display: inline-table;
+        margin-left: 27%;
+        margin-bottom: 20px;
+        border-top: 5px solid red;
+        border-bottom: 5px solid green;
+    }
+
+    .formContact{
+        width: 300px;
+        left: 15%;
+        padding: 0px 15px;
+    }
+
+    .formContact input{
+        width: 200px;
+    }
 }

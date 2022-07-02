@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
+.containerFooter{
+	display: inline-table;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	height: auto;
+}
 * {
   font-family: Open Sans;
 }
@@ -7,7 +13,7 @@
 .footer-logo img{
     display: block;
     width: 75%;
-	border: 10px;
+	border: 50%;
 	border-radius: 50%;
 }
 .footer-distributed .footer-left p{
@@ -19,6 +25,7 @@
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
+	max-width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
@@ -35,6 +42,7 @@
 
 .footer-distributed .footer-left{
 	width: 30%;
+	padding-left: 2%;
 }
 
 
@@ -56,6 +64,7 @@
 	color:  #ffffff;
 	margin: 5px 0 12px;
 	padding: 0;
+	padding-bottom: 2%;
 }
 
 .footer-distributed .footer-links a{
@@ -207,7 +216,7 @@
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
-
+	
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right{
@@ -221,4 +230,9 @@
 		margin-left: 0;
 	}
 
+	.footer-logo img{
+		margin-left: 35px;
+		padding: 10px;
+	}
+	
 }

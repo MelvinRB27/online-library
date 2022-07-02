@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../css/register.css';
+import Logo from '../img/Library (3).png';
 
 const Register = () => (
     <div className="registerContainer">
@@ -9,7 +10,7 @@ const Register = () => (
         </div>
         <h2><b>Register now</b>, to enjoy the best books online</h2>
         <form className="formRegister">
-            <h3>Register now</h3>
+            <img src={Logo} alt="Logo" />
 
             <label hmtlFor="name">Name</label>
             <input type="text" placeholder="Name" id="name"/>
@@ -29,6 +30,7 @@ const Register = () => (
                 <div className="fb"><i class="fab fa-facebook"></i>  Facebook</div>
             </div>
         </form>
+        
         <h4>You already have an account <b> <Link to="/login">log in here</Link> </b></h4>
     </div>
     

@@ -16,9 +16,10 @@ import Register from './pages/register';
 import { Routes, Route} from "react-router-dom";
 
 const App = () =>  (
-  <>
+  <div className='containerApp'>
     <Header/>
     <br/>
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/books" element={<Books/>}/>
@@ -29,9 +30,9 @@ const App = () =>  (
       <Route path="/register" element={<Register />} />
     </Routes>
     <br/>
-    <br/>
     <Footer />
-  </>
+    
+  </div>
 );
 
 

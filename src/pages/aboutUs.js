@@ -3,8 +3,8 @@ import MelvinPerfil from '../img/MelvinPerfil2.jpg';
 import JosePerfil from '../img/JosePerfil.jpg';
 
 const AboutUs = () => (
-    <>
-        <h1 className='titlePage'><b>About us</b></h1>     
+    <div className="mainAboutUs">
+        <h2 className='titlePage'><b>About us</b></h2>     
 
         <div className="containerAboutUs">
             <div className="containerParagraph">
@@ -33,7 +33,7 @@ const AboutUs = () => (
                     
                     <p className="footer-company-about"> 
                         Software developer with knowledge in Java, c#, 
-                        python, JavaScript, Vue.js, React HTML. 
+                        Python, JavaScript, GO, Vue.js, React HTML. 
                         I have worked several projects as Frontend, also with the Backend. 
                     </p>
                 </div>
@@ -71,7 +71,7 @@ const AboutUs = () => (
 
         </div>
         
-    </>
+    </div>
 );
 
 export default AboutUs;

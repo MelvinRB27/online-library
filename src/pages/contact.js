@@ -1,14 +1,23 @@
 import '../css/contact.css';
+import Logo from '../img/Library (3).png';
 
 const Contact = () => (
-    <>
-        <h1 className='titlePage'><b>CONTACT</b></h1>
+    <div className='containerContact'>
+        <h2 className='titlePage'><b>Contact</b></h2>
 
-        <div className='contactNumber'>
-            <h5>Phone <p>809-000-0000</p></h5>
+        <div className='contactNE'>
+            <h5>Phone</h5>
+            <p>809-000-0000</p>
+
+            <h5>Email</h5>
+            <p><a href="mailto:support@LibraryMJ.com">support@LibraryMJ.com</a></p>
+
         </div>
 
         <form className='formContact'>
+
+            <img src={Logo} alt="Logo" />
+
             <label htmlFor="username">Username</label>
             <input type="text" placeholder="Name" id="username"/>
 
@@ -20,7 +29,7 @@ const Contact = () => (
 
             <button className='btnLogin'>Send message</button>
         </form>
-    </>
+    </div>
 )
 
 export default Contact;

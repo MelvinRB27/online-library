@@ -1,7 +1,11 @@
-body{
-    background-color: #080710;
+.loginContainer{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
 }
-.loginContainer h4, h1{
+
+.loginContainer h4, h2{
     text-align: center;
     color: #e5e5e5;
 }
@@ -12,7 +16,7 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 50%;
+    top: 60%;
 }
 .backgroundFormLogin .shape{
     height: 200px;
@@ -38,7 +42,7 @@ body{
     bottom: -80px;
 }
 .formLogin{
-    height: 530px;
+    height: 700px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position:relative;
@@ -56,11 +60,12 @@ body{
     outline: none;
     border: none;
 }
-.formLogin h3{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
-    text-align: center;
+
+.formLogin img {
+    border-radius: 50%;
+    width: 40%;
+    padding: 0%;
+    margin-left: 30%;
 }
 
 .formLogin label{
@@ -70,7 +75,7 @@ body{
     font-weight: 500;
 }
 .formLogin input{
-    color: #080710;
+    color: white;
     display: block;
     height: 50px;
     width: 100%;
@@ -116,4 +121,31 @@ body{
 }
 .socialLogin i{
   margin-right: 4px;
+}
+
+@media (max-width: 880px) {
+
+	.header{
+		font: bold 12px sans-serif;
+
+	}
+
+    .backgroundFormLogin{
+        left: 35%;
+        top: 85%;
+    }
+
+    .backgroundFormLogin .shape{
+        height: 100px;
+        width: 100px;
+    }
+
+    .socialLogin .fb{
+        width: 100px;
+      }
+    
+    .formLogin{
+        width: 300px;
+        left: 15%;
+    }
 }

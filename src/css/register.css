@@ -4,11 +4,18 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #080710;
+.registerContainer{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
 }
 
+h2{
+    padding-bottom: 2%;
+}
 .registerContainer h2, h4{
+    padding-top: 2%;
     text-align: center;
     color: #e5e5e5;
 }
@@ -19,7 +26,7 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 50%;
+    top: 70%;
 }
 .backgroundFormRegister .shape{
     height: 200px;
@@ -45,7 +52,7 @@ body{
     bottom: -80px;
 }
 .formRegister{
-    height: 760px;
+    height: 850px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: relative;
@@ -71,6 +78,13 @@ body{
     text-align: center;
 }
 
+.formRegister img {
+    border-radius: 50%;
+    width: 40%;
+    padding: 0%;
+    margin-left: 30%;
+}
+
 .formRegister label{
     display: block;
     margin-top: 30px;
@@ -78,7 +92,7 @@ body{
     font-weight: 500;
 }
 .formRegister input{
-    color: #080710;
+    color: white;
     display: block;
     height: 50px;
     width: 100%;
@@ -124,4 +138,28 @@ body{
 }
 .socialRegister i{
   margin-right: 4px;
+}
+
+
+@media (max-width: 880px) {
+
+    .backgroundFormRegister{
+        left: 35%;
+        top: 85%;
+    }
+
+    .backgroundFormRegister .shape{
+        height: 127px;
+        width: 127px;
+    }
+
+    .socialLogin .fb{
+        width: 100px;
+      }
+    
+    .formRegister{
+        width: 300px;
+        left: 15%;
+    }
+
 }

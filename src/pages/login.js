@@ -1,16 +1,18 @@
 import '../css/login.css';
 
 import {Link} from 'react-router-dom';
+import Logo from '../img/Library (3).png';
 
 const Login = () => (
     <div className="loginContainer">
-        <h1>Welcome</h1>
+        <h2>Login Here</h2>
         <div className="backgroundFormLogin">
             <div className="shape"></div>
             <div className="shape"></div>
         </div>
         <form className='formLogin'>
-            <h3>Login Here</h3>
+
+            <img src={Logo} alt="Logo" />
 
             <label htmlFor="username">Username</label>
             <input type="text" placeholder="Email or Phone" id="username"/>
