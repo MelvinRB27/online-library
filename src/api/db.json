@@ -2,56 +2,62 @@
    "books": [
     {
     "Id":1,
-    "author": "Melvin José",
+    "author": "Melvin",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-46e27bb5bb18d1354f5acc1d96454f60_screen.jpg?ts=1637015775"
+    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-46e27bb5bb18d1354f5acc1d96454f60_screen.jpg?ts=1637015775",
+    "offer":true
     },
 
     {
     "Id":5,
-    "author": "Melvin José",
+    "author": "José",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-fe1040a9952994208fcae6066ab78f2b_screen.jpg?ts=1636980773"
+    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-fe1040a9952994208fcae6066ab78f2b_screen.jpg?ts=1636980773",
+    "offer":false
     },
 
     {
     "Id":7,
-    "author": "Melvin José",
+    "author": "Melvin",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg"
+    "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg",
+    "offer":true
     },
 
     {
     "Id":9,
-    "author": "Melvin José",
+    "author": "José",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://i.pinimg.com/originals/91/bb/68/91bb68fd107de6780beb79998351e87f.jpg"
+    "cover": "https://i.pinimg.com/originals/91/bb/68/91bb68fd107de6780beb79998351e87f.jpg",
+    "offer":false
     },
 
     {
     "Id":11,
-    "author": "Melvin José",
+    "author": "Melvin",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://www.adobe.com/es/express/create/cover/media_18d86248e8c6c00f18e7461e58ee5291a8485f45f.png?width=400&format=png&optimize=medium"
+    "cover": "https://www.adobe.com/es/express/create/cover/media_18d86248e8c6c00f18e7461e58ee5291a8485f45f.png?width=400&format=png&optimize=medium",
+    "offer":true
     },
 
     {
     "Id":13,
-    "author": "Melvin José",
+    "author": "José",
     "title": "BOOKSSSSSS",
     "age": 2010,
     "pages": 250,
-    "cover": "https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=400&format=png&optimize=medium"
+    "cover": "https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=400&format=png&optimize=medium",
+    "offer":false
     }
 
     ]

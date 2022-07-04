@@ -1,12 +1,11 @@
 import '../css/home.css';
-import BookCard from '../cards/BookCard';
-import SearchB from '../cards/SearchB';
+
+import Books from './books';
 const Home = () => (
     <div className="containerHome">
         <div className='containerDivBooks'>
         <h2 className='titlePage'>WELCOME TO <b>LIBRARY MJ</b> </h2>
-        <SearchB/>
-        <BookCard/>
+        <Books url="books?offer_like=true"/>
         </div>
 
     </div>

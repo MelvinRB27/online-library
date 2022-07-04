@@ -7,7 +7,7 @@ import SearchB from '../cards/SearchB';
 import Spinner from '../components/Spinner';
 
 import useFetch from '../hooks/useFetch';
-const Books = ({ url} ) => {
+const Books = ({ url, title } ) => {
 
     const [book, error] = useFetch(url);
 
@@ -22,7 +22,7 @@ const Books = ({ url} ) => {
         <div className="conataierBooks">
             <Aside/>
             <div className='containerDivBooks'>
-                <h2 className='titlePage'><b>BOOKS</b></h2>
+                {title && <h2 className='titlePage'><b>BOOKS</b></h2>}
                 <SearchB/>
                 {book.length === 0 && 
                     <Spinner />
