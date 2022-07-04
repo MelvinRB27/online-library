@@ -20,7 +20,7 @@ const Books = ({ url, title } ) => {
     
     return (
         <div className="conataierBooks">
-            <Aside/>
+            {title && <Aside/>}
             <div className='containerDivBooks'>
                 {title && <h2 className='titlePage'><b>BOOKS</b></h2>}
                 <SearchB/>
