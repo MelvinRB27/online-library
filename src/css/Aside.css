@@ -6,6 +6,11 @@
     float: left;
 }
 
+button:hover{
+    background-color: rgb(6, 49, 70);
+    color: white;
+}
+
 @media (max-width: 880px) {
 
 	.containerAside{
