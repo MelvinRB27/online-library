@@ -1,5 +1,4 @@
 import '../css/bookCard.css';
-import {string, number} from 'prop-types';
 
 const BookCard = ({author, title, age, pages, cover}) => {
     return(

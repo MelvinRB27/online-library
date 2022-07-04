@@ -4,10 +4,9 @@ import BookCard from '../cards/BookCard';
 import Spinner from '../components/Spinner';
 
 import useFetch from '../hooks/useFetch';
-import apiAJAX from '../hooks/apiAJAX';
 const Books = ({ url} ) => {
 
-    const [book, error] = apiAJAX(url);
+    const [book, error] = useFetch(url);
 
     if (error) { return (
         <>
