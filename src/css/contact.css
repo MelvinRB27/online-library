@@ -24,7 +24,7 @@
 
 .formContact{
     display: inline-table;
-    height: 800px;
+    height: 850px;
     width: 600px;
     background-color: rgba(255,255,255,0.13);
     position:relative;
@@ -32,6 +32,7 @@
     left: 15%;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 100px;
 }
 
@@ -59,6 +60,7 @@
     font-weight: 300;
 }
 
+
 .formContact textarea{
     color: white;
     height: 45%;
@@ -70,11 +72,16 @@
 }
 
 .formContact button{
-    display: block;
-    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 65px;
+    width: 55%;
+    background-color: #0003b4;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
-    margin-left: 35%;
+    cursor: pointer;
 }
 
 @media (max-width: 880px) {
@@ -87,6 +94,14 @@
         border-bottom: 5px solid green;
     }
 
+    .formContact img{
+        border-radius: 50%;
+        width: 40%;
+        padding: 0%;
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+
     .formContact{
         width: 300px;
         left: 15%;
@@ -95,5 +110,9 @@
 
     .formContact input{
         width: 200px;
+    }
+
+    .formContact button{
+        margin-left: 55px;
     }
 }

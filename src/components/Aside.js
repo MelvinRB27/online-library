@@ -3,9 +3,10 @@ import "../css/Aside.css";
 const Aside = () => (
   <div className="containerAside">
     <aside className="cold-m-3 hidden-xs hidden-sm">
-        <h4>CATEGORY</h4>
+        
         <div className="list-group">
-            <button to="/book" className="list-group-item active">
+            <h4 className="list-group-item active">CATEGORY</h4>
+            <button to="/login" className="list-group-item ">
                 <i className="fa fa-book fa-1x"></i>
                 EDUCATION
             </button>
