@@ -1,5 +1,5 @@
 import '../css/home.css';
-import BookCard from '../cards/BookCardH';
+import BookCard from '../cards/BookCard';
 
 const Home = () => (
     <div className="containerHome">
