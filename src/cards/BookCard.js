@@ -1,179 +1,26 @@
 import '../css/bookCard.css';
+import {string, number} from 'prop-types';
 
-const Book = () => (
-    <div>
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Shade: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
+const BookCard = ({author, title, age, pages, cover}) => {
+    return(
+        <div>
+            <div id="containerCardBook">	
+                <div className="product-image">
+                    <img src={cover} alt=""/>
+            
+                    <div className="info">
+                        <h2> Description</h2>
+                        <ul>
+                            <li><strong>Title: </strong>{title}</li>
+                            <li><strong>Author: </strong>{author}</li>
+                            <li><strong>Pages: </strong>{pages}</li>
+                            <li><strong>Age: </strong>{age}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    )
+}
 
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Pages: </strong>balls and bells</li>
-                    <li><strong>Material: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="containerCardBook">	
-        <div className="product-image">
-            <img src="https://edit.org/images/cat/portadas-libros-big-2019101610.jpg" alt=""/>
-    
-            <div className="info">
-                <h2> Description</h2>
-                <ul>
-                    <li><strong>Author: </strong>5 Ft </li>
-                    <li><strong>Title: </strong>Olive green</li>
-                    <li><strong>Decoration: </strong>balls and bells</li>
-                    <li><strong>Age: </strong>Eco-Friendly</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-)
-
-export default Book;
+export default BookCard;
