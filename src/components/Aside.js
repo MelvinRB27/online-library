@@ -1,4 +1,5 @@
 import "../css/Aside.css";
+import { Link } from 'react-router-dom'
 
 const Aside = () => (
   <div className="containerAside">
@@ -6,46 +7,46 @@ const Aside = () => (
         
         <div className="list-group">
             <h4 className="list-group-item active">CATEGORY</h4>
-            <button to="/login" className="list-group-item ">
+            <Link to="?offer_like=true" className="list-group-item ">
                 <i className="fa fa-book fa-1x"></i>
                 EDUCATION
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=lenguages" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 LENGUAGES
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=electronics" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 ELECTRONICS
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=philosophy" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 PHILOSOPHY
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=geography" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 GEOGRAPHY
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=history" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 HISTORY
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=developer" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 WEB DEVELOPER
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=control-version" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 CONTROL VERSION
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=3d-design" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 3D DESIGN
-            </button>
-            <button to="#" className="list-group-item">
+            </Link>
+            <Link to="?category_like=database" className="list-group-item">
                 <i className="fa fa-book fa-1x"></i>
                 DATABASE
-            </button>
+            </Link>
         </div>
     </aside>
   </div>

@@ -6,9 +6,12 @@ const Fetch = ( endpoint ) => {
     const [error, setError] = useState()
     
     useEffect( () => {
-            get(`${process.env.REACT_APP_URL_API}${endpoint}`)
+        const getBooks = async() =>{
+            await get(`${process.env.REACT_APP_URL_API}${endpoint}`)
             .then(({data}) => setBook(data))
             .catch((e) => setError(e))
+        }
+        getBooks()
     }, [endpoint])
     return [book, error]
 }

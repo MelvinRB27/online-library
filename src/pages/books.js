@@ -23,7 +23,8 @@ const Books = ({ url, title } ) => {
             {title && <Aside/>}
             <div className='containerDivBooks'>
                 {title && <h2 className='titlePage'><b>BOOKS</b></h2>}
-                <SearchB/>
+                {title && <SearchB/>}
+                
                 {book.length === 0 && 
                     <Spinner />
                 }
