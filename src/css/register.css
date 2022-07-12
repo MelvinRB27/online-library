@@ -52,8 +52,9 @@ h2{
     bottom: -80px;
 }
 .formRegister{
-    height: 850px;
-    width: 400px;
+    display: block;
+    height: 1150px;
+    width: 450px;
     background-color: rgba(255,255,255,0.13);
     position: relative;
     top: 50%;
@@ -66,12 +67,12 @@ h2{
 }
 .formRegister *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
     letter-spacing: 0.px;
     outline: none;
     border: none;
 }
 .formRegister h3{
+    color: white;
     font-size: 27px;
     font-weight: 500;
     line-height: 42px;
@@ -86,12 +87,13 @@ h2{
 }
 
 .formRegister label{
-    display: block;
-    margin-top: 30px;
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
     font-size: 16px;
     font-weight: 500;
 }
-.formRegister input{
+.formRegister .ipt{
     color: white;
     display: block;
     height: 50px;
@@ -103,6 +105,11 @@ h2{
     font-size: 14px;
     font-weight: 300;
 }
+
+.form-check-label{
+    padding: 5%;
+}
+
 ::placeholder{
     color: #e5e5e5;
 }

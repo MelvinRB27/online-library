@@ -2,18 +2,30 @@ import '../css/home.css';
 
 import Books from './books';
 import Banner from '../components/Banner'
-const Home = () => (
-    <div className="containerHome">
-        <div className='containerDivBooks'>
-            {/* <h2 className='titlePage'>WELCOME TO <b>LIBRARY MJ</b> </h2> */}
-            <Banner/>
+import ValidateToken from '../js/validateToken';
+const Home = () => {
 
-            <div className='ctnBookHome'>
-                <Books url="books?offer_like=true"/>
+    const [errorToken] = ValidateToken()
+
+    return(
+        <div className="containerHome">
+            <div className='containerDivBooks'>
+                {
+                    !errorToken ? (
+                    <> 
+                        <Banner login/> 
+                        <div className='ctnBookHome'>
+                            <Books url="books?offer_like=true"/>
+                        </div> </>) 
+                        : 
+                    (<Banner />)
+                }
+
+
             </div>
-        </div>
 
-    </div>
-)
+        </div>
+    )
+}
 
 export default Home;

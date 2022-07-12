@@ -1,0 +1,44 @@
+.cntInfoUser{
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    color: white;
+}
+
+
+.card {
+    width: 500%;
+}
+
+.cntData{
+    color: white;
+}
+
+.card.hovercard {
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(250, 254, 255, 0.082);
+}
+
+.card.hovercard .cardheader {
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20200621/pngtree-abstract-modern-neon-frame-background-image_339537.jpg");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -80px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}

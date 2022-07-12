@@ -15,7 +15,7 @@
 
 .navbar-logo{
   width: 100%;
-  padding-right: 5%;
+  padding-right: 0%;
 }
 
 .containerLogo {
@@ -119,6 +119,28 @@ h1 {
   padding: 0;
 }
 
+.navigation__item{
+  text-align: center;
+}
+
+.infoUser{
+  margin-left: 5%;
+  display: inline-flex;
+  border-left: 1px solid red;
+  border-right: 1px solid green;
+}
+
+.infoUser h4{
+  margin-right: 15px;
+}
+
+.avatar img{
+  margin-right: 15px;
+  width: 50px;
+  position: relative;
+}
+
+
 .navigation__list--inline {
   display: flex;
   gap: 1.5em;
@@ -126,7 +148,7 @@ h1 {
 
 .navigation__link {
   color: inherit;
-  display: block;
+  display: inline-block;
   padding-inline: 1em;
   text-decoration: none;
 }

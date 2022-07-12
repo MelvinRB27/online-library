@@ -5,6 +5,7 @@
 	max-width: 100%;
 	box-sizing: border-box;
 	height: auto;
+	margin-top: 5%;
 }
 * {
   font-family: Open Sans;
@@ -144,6 +145,10 @@
 
 .footer-distributed .footer-right{
 	width: 20%;
+}
+
+.footer-right img{
+	margin-left: 100px;
 }
 
 .iconCEO{
