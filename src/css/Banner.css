@@ -29,6 +29,20 @@ h1{
   margin-left: 29%;
   margin-right:29% ;
 }
+
+
+.responsive-banner.first-login {
+  background-image: linear-gradient(to bottom right, #39b5b9, #ca1f1f);
+}
+.responsive-banner.second-login {
+  background-image: linear-gradient(to bottom right, #eb8314, #4ed476);
+}
+.responsive-banner.third-login {
+  background-image: linear-gradient(to bottom right, #062f50, #502626);
+  margin-left: 29%;
+  margin-right:29% ;
+}
+
 .container-envelope {
   max-width: calc(100%);
   padding: 15px;
@@ -125,11 +139,45 @@ h1 {
   background-color: #0e11ce;
   color: #fff;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 20%;
+  margin-left: 15%;
   margin-bottom: 5px;
   line-height: 1.5;
   text-decoration: none;
   text-transform: none;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 880px) {
+  .responsive-banner {
+    display: inline-flex;
+    margin: 10px;
+    margin-left: 5%;
+    width: 60%;
+    max-width: 490px;
+    min-width: 320px;
+    position: relative;
+    min-height: 300px;
+    max-height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .responsive-banner.third {
+    background-image: linear-gradient(to bottom right, #74e558, #74dac4);
+    margin-left: 5%;
+    margin-right:0% ;
+  }
+
+  .responsive-banner.third-login  {
+    background-image: linear-gradient(to bottom right, #062f50, #502626);
+    margin-left: 5%;
+    margin-right:0% ;
+  }
+
 }

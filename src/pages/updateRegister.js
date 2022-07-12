@@ -1,9 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../css/register.css';
 import Logo from '../img/Library (3).png';
 
 import { useState, useEffect } from 'react';
-import registerApi from '../js/registerAPI';
+import UpdateRegister from '../js/updateRst';
 
 import ValidateToken from '../js/validateToken';
 import Swal from 'sweetalert2';
@@ -12,13 +12,12 @@ const Register = () => {
 
     const [name, setName] = useState("")
     const [lastName, setLastName] = useState("")
-    const [username, setUserName] = useState("")
     const [rol, setRol] = useState("")
     const [gender, setGender] = useState("")
     const [password, setPassword] = useState("")
     const [passwordConfirm, setPasswordConfirm] = useState("")
 
-    console.log(name, lastName, username, gender, rol, password, passwordConfirm)
+    console.log(name, lastName, gender, rol, password, passwordConfirm)
 
     const [errorToken] = ValidateToken()
 
@@ -39,7 +38,7 @@ const Register = () => {
 
   
     useEffect(() => {
-        if (!errorToken) {
+        if (errorToken) {
             alertSuccess("You are already logged in")
             return redirect('/')
         }
@@ -68,12 +67,6 @@ const Register = () => {
                 <input className='ipt' type="text" placeholder="Last Name" id="lastNameRegister" required
                 
                     onChange={(event) => setLastName(event.target.value)}
-                />
-
-                <label htmlFor="usernameRegister">Username</label>
-                <input className='ipt'type="email" placeholder="Email" id="usernameRegister" required
-                
-                    onChange={(event) => setUserName(event.target.value)}
                 />
 
                 <label>Select Gender</label>
@@ -105,11 +98,9 @@ const Register = () => {
                     onChange={(event) => setPasswordConfirm(event.target.value)}
                 />
 
-                <button className="btnRegister" onClick={() => registerApi(name, lastName, username, gender, rol, password, passwordConfirm)}>Register</button>
+                <button className="btnRegister" onClick={() => UpdateRegister(name, lastName, gender, rol, password, passwordConfirm)}>Register</button>
                
             </form>
-            
-            <h4>You already have an account <b> <Link to="/login">log in here</Link> </b></h4>
         </div>
     )
 }

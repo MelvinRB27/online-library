@@ -10,6 +10,8 @@ import AboutUs from './pages/aboutUs';
 import Contact from './pages/contact';
 import Login from './pages/login';
 import Register from './pages/register';
+import User from './components/User';
+import UpdateRegister from './pages/updateRegister';
 
 
 
@@ -28,6 +30,8 @@ const App = () =>  (
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/update_Register" element={<UpdateRegister />} />
+      <Route path="/user" element={<User />} />
     </Routes>
     <br/>
     <Footer />

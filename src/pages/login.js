@@ -1,36 +1,77 @@
 import '../css/login.css';
 
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import Logo from '../img/Library (3).png';
+import { useState, useEffect } from 'react';
+import loginApi from '../js/loginAPI';
 
-const Login = () => (
-    <div className="loginContainer">
-        <h2>Login Here</h2>
-        <div className="backgroundFormLogin">
-            <div className="shape"></div>
-            <div className="shape"></div>
-        </div>
-        <form className='formLogin'>
+import Swal from 'sweetalert2';
 
-            <img src={Logo} alt="Logo" />
+import ValidateToken from '../js/validateToken';
 
-            <label htmlFor="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username"/>
+const Login = () => {
 
-            <label htmlFor="password">Password</label>
-            <input type="password" placeholder="Password" id="password"/>
+    const [userName, setUserName] = useState()
+    const [password, setPassword] = useState()
+    const [errorToken] = ValidateToken()
 
-            <button className='btnLogin'>Log In</button>
-            <div className="socialLogin">
-                <div className="go"><i className="fab fa-google"></i>  Google</div>
-                <div className="fb"><i className="fab fa-facebook"></i>  Facebook</div>
+    //redirect page
+    let redirect = useNavigate()
+
+    //alert for  user
+    const alertSuccess = (txt) => {
+        Swal.fire({
+        icon: 'success',
+        title: 'Login success',
+        text: txt,
+        showConfirmButton: false,
+        timer: 1500
+    })}
+
+    useEffect(() => {
+        if (!errorToken) {
+            alertSuccess("You are already logged in")
+            return redirect('/')
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[errorToken])
+
+    const formSubmit = (e) => {
+        e.preventDefault()
+    };
+
+    return(
+        <div className="loginContainer">
+            <h2>Login Here</h2>
+            <div className="backgroundFormLogin">
+                <div className="shape"></div>
+                <div className="shape"></div>
             </div>
-        </form>
+            <form className='formLogin' onSubmit={formSubmit}>
 
-        <h4>Don't have an account yet? , <b> <Link to="/register">register here</Link> </b> </h4>
-    
-    </div>
+                <img src={Logo} alt="Logo" />
+
+                <label htmlFor="usernameLogin">Username</label>
+                <input type="email" placeholder="Email" id="usernameLogin" required
+                
+                onChange={(event) => setUserName(event.target.value)}
+                />
+
+                <label htmlFor="passwordLogin">Password</label>
+                <input type="password" placeholder="Password" id="passwordLogin" required
+                
+                onChange={(event) => setPassword(event.target.value)}
+                />
+
+                <button className='btnLogin' onClick={() => { loginApi(userName, password);}} >Log In</button>
+
+            </form>
+
+            <h4>Don't have an account yet? , <b> <Link to="/register">register here</Link> </b> </h4>
+        
+        </div> 
+)
+
+}
    
-);
-
 export default Login;

@@ -1,5 +1,6 @@
 import '../css/Footer.css'
 import Logo from '../img/Library (3).png';
+import Nortic from '../img/A5ReglaNortic.png';
 
 import { NavLink, Link } from 'react-router-dom';
 
@@ -90,6 +91,7 @@ const Footer = () => (
                 <br/>
                 
                 <p>© 2022 ALL RIGHTS RESERVED </p>
+                <img  alt="logo"  src={Nortic} />
             </div>
 
         </footer>

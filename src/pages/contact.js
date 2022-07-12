@@ -21,8 +21,8 @@ const Contact = () => (
             <label htmlFor="username">Username</label>
             <input type="text" placeholder="Name" id="username"/>
 
-            <label htmlFor="email">Password</label>
-            <input type="Email" placeholder="Email" id="email"/>
+            <label htmlFor="email">Email</label>
+            <input type="email" placeholder="Email" id="email"/>
 
             <label htmlFor="textare">Your message</label>
             <textarea type="text"  id="textare"/>
