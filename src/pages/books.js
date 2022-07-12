@@ -7,6 +7,8 @@ import SearchB from '../cards/SearchB';
 import Spinner from '../components/Spinner';
 
 import useFetch from '../hooks/useFetch';
+import ScrollToTop from "react-scroll-to-top";
+
 const Books = ({ url, title } ) => {
 
     const [book, error] = useFetch(url);
@@ -19,8 +21,11 @@ const Books = ({ url, title } ) => {
     )}
     
     return (
+        
         <div className="conataierBooks">
+             <ScrollToTop />
             {title && <Aside/>}
+            
             <div className='containerDivBooks'>
                 {title && <h2 className='titlePage'><b>BOOKS</b></h2>}
                 {title && <SearchB/>}
@@ -51,6 +56,7 @@ const Books = ({ url, title } ) => {
                     })
 
                 }
+                        
             </div>
         </div>
 
