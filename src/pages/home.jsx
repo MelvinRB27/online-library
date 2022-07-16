@@ -21,9 +21,17 @@ const Home = () => {
                         </div> </>) 
                         : 
                     (<Banner />)
-                }
-
-
+                }   
+                <br/>
+                <br/>
+                <h2>Social networks</h2>
+                <div className='iconHome'>
+                    <a href='/'><i className="fa fa-facebook"></i></a>
+                    <a href='/'><i className="fa fa-instagram"></i></a>
+                    <a href='/'><i className="fa fa-twitter"></i></a>
+                </div>
+                    
+            
             </div>
 
         </div>

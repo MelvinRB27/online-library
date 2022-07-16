@@ -43,10 +43,10 @@ const Login = () => {
     return(
         <div className="loginContainer">
             <h2>Login Here</h2>
-            <div className="backgroundFormLogin">
+            {/* <div className="backgroundFormLogin">
                 <div className="shape"></div>
                 <div className="shape"></div>
-            </div>
+            </div> */}
             <form className='formLogin' onSubmit={formSubmit}>
 
                 <img src={Logo} alt="Logo" />

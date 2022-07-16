@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
+import BarNav from './components/BarNav';
 import Header from './components/Header';
 
 //pages
@@ -19,7 +20,8 @@ import { Routes, Route} from "react-router-dom";
 
 const App = () =>  (
   <div className='containerApp'>
-    <Header/>
+    <Header />
+    <BarNav/>
     <br/>
     
     <Routes>

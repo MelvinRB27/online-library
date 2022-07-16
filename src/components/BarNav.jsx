@@ -1,14 +1,15 @@
-import { NavLink, Link } from 'react-router-dom';
-import '../css/Header.css';
-import Logo from '../img/Library (3).png';
+import { NavLink } from 'react-router-dom';
+import '../css/BarNav.css';
+// import Logo from '../img/Library (3).png';
 import AvatarMen from '../img/avatars/AvatarMen.png'
 import AvatarWoman from '../img/avatars/AvatarWoman.png'
 import AvatarHuascar from '../img/avatars/AvatarHusacar.png'
 import AvatarMelvin from '../img/avatars/AvatarMelvin.png'
 import AvatarJose from '../img/avatars/AvatarJose.png'
 
-import ButtonLogout from '../components/ButtonLogout';
+import ButtonLogout from './ButtonLogout';
 import ValidateToken from '../js/validateToken';
+import ScrollToTop from "react-scroll-to-top";
 
 const Header = () => {
     const [errorToken] = ValidateToken()
@@ -38,11 +39,11 @@ const Header = () => {
                 <div className="grid">
                     <nav className="navigation">
                         <ul className="navigation__list navigation__list--inline">
-                            <div className="containerLogo">
+                            {/* <div className="containerLogo">
                                 <Link className="navbar-logo" to="/">
                                     <img alt="logo"  src={Logo} />
                                 </Link>
-                            </div>
+                            </div> */}
                             <li className="navigation__item"><NavLink className="active navigation__link " to="/"><p>Home</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/books" ><p>Books</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/offers"><p>Offers</p></NavLink></li>
@@ -73,6 +74,7 @@ const Header = () => {
                     </nav>
                 </div>
             </header>
+            <ScrollToTop />
         </div>
     
     );

@@ -1,5 +1,5 @@
 import '../css/books.css';
-import Aside from '../components/Aside';
+// import Aside from '../components/Aside';
 import BookCard from '../cards/BookCard';
 
 import {useNavigate} from 'react-router-dom';
@@ -12,9 +12,7 @@ import Spinner from '../components/Spinner';
 
 import useFetch from '../hooks/useFetch';
 
-import ScrollToTop from "react-scroll-to-top";
 import Swal from 'sweetalert2';
-
 
 
 const Books = ({ url, title } ) => {
@@ -51,8 +49,8 @@ const Books = ({ url, title } ) => {
     return (
         
         <div className="conataierBooks">
-             <ScrollToTop />
-            {title && <Aside/>}
+        
+            {/* {title && <Aside/>} */}
             
             <div className='containerDivBooks'>
                 {title && <h2 className='titlePage'><b>BOOKS</b></h2>}

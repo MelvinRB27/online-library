@@ -1,9 +1,11 @@
 import '../css/aboutUs.css';
 import MelvinPerfil from '../img/MelvinPerfil2.jpg';
 import JosePerfil from '../img/JosePerfil.jpg';
+import ScrollToTop from "react-scroll-to-top";
 
 const AboutUs = () => (
     <div className="mainAboutUs">
+        <ScrollToTop />
         <h2 className='titlePage'><b>About us</b></h2>     
 
         <div className="containerAboutUs">

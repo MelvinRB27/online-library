@@ -50,10 +50,10 @@ const Register = () => {
     return (
 
         <div className="registerContainer">
-            <div className="backgroundFormRegister">
+            {/* <div className="backgroundFormRegister">
                 <div className="shape"></div>
                 <div className="shape"></div>
-            </div>
+            </div> */}
             <h2><b>Register now</b>, to enjoy the best books online</h2>
             <form className="formRegister" onSubmit={formSubmit}>
                 <img src={Logo} alt="Logo" /> <br/>
