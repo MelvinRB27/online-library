@@ -1,9 +1,11 @@
 import '../css/contact.css';
 import Logo from '../img/Library (3).png';
+import contactName from '../img/contact.png'
 
 const Contact = () => (
     <div className='containerContact'>
-        <h2 className='titlePage'><b>Contact</b></h2>
+        <div className='titlePage' > <img alt='book' src={contactName}/> </div>
+        <br/>
 
         <div className='contactNE'>
             <h5>Phone</h5>
@@ -11,9 +13,9 @@ const Contact = () => (
 
             <h5>Email</h5>
             <p><a href="mailto:support@LibraryMJ.com">support@LibraryMJ.com</a></p>
-
         </div>
-
+        <br/>
+        <br/>
         <form className='formContact'>
 
             <img src={Logo} alt="Logo" />

@@ -1,16 +1,38 @@
+.containerHeader{
+    background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.079)
+  );
+    text-align: center;
+    display: flex;
+}
+
+.logo{
+    width: 10%;
+}
 .logo img {
-    width: 20%;
+    width: 100%;
     border: 5px;
     border-radius: 50%;
-    display: flex;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.containerHeader{
-    display: flex;
+.containerNameLogo{
+    margin: auto;
 }
 
+.containerNameLogo img{
+    width: 600px;
+}
 
 .containerLogoRD{
     margin-top: 10px;
+}
+
+@media (max-width: 880px) {
+    .containerNameLogo img{
+        width: 200px;
+    }
+    
 }

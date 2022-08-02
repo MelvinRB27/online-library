@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/register.css';
 import Logo from '../img/Library (3).png';
+import registerNAME from '../img/register.png'
 
 import { useState, useEffect } from 'react';
 import registerApi from '../js/registerAPI';
@@ -54,6 +55,7 @@ const Register = () => {
                 <div className="shape"></div>
                 <div className="shape"></div>
             </div> */}
+            <div className='titlePage' > <img alt='book' src={registerNAME}/> </div>
             <h2><b>Register now</b>, to enjoy the best books online</h2>
             <form className="formRegister" onSubmit={formSubmit}>
                 <img src={Logo} alt="Logo" /> <br/>

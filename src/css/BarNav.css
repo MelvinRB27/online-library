@@ -1,4 +1,9 @@
-.conataierHeader{
+.conataierBarNav{
+  background-color: rgba(59, 3, 3, 0.203);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.079),
+      rgba(255, 255, 255, 0)
+    );
   display: inline-table;
   width: 100%;
   max-width: 100%;
@@ -76,7 +81,7 @@ body {
 
 .header {
   background-color: linear-gradient(
-    rgb(4, 1, 49),
+    rgb(242, 242, 242),
     black
 );
   padding-block: 1em;

@@ -17,19 +17,18 @@ const UserPage = () => {
     let redirect = useNavigate()
 
     //alert for  user
-    const alertSuccess = (txt) => {
+    const alertError = (txt) => {
         Swal.fire({
-        icon: 'success',
-        title: 'Login success',
-        text: txt,
-        showConfirmButton: false,
-        timer: 1500
-    })}
+            icon: 'error',
+            title: 'Oops...',
+            text: txt,
+            })
+        }
 
     useEffect(() => {
         if (errorToken) {
-            alertSuccess("You are already logged in")
-            return redirect('/')
+            alertError("You must log in or create an account")
+            return redirect('/login')
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[errorToken])
@@ -80,9 +79,7 @@ const UserPage = () => {
                         </div>
                         <button className="btn btn-primary" onClick={() => redirect("/update_Register")} >EDIT INFO</button>
                     </div>
-
                 </div>
-
         </div>
 
     )

@@ -1,20 +1,23 @@
 import "../css/Header.css";
 import Logo from "../img/Library (3).png";
+import NameLogo from '../img/NameLogo.png';
 
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="containerHeader">
-      <div className="col-lg-9 col-md-9">
         <div className="logo">
           <Link className="" to="/">
             <img alt="logo" src={Logo} />
           </Link>
-        </div>
       </div>
 
-      <div className="containerLogoRD col-lg-3 col-md-3 d-none d-sm-none d-lg-block">
+      <div className="containerNameLogo">
+          <img alt='nameLogo' src={NameLogo} />
+      </div>
+
+      {/* <div className="containerLogoRD col-lg-3 col-md-3 d-none d-sm-none d-lg-block">
         <div className="eletop float-right">
           <div className="escudo">
             <img
@@ -71,7 +74,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

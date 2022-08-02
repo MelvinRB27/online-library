@@ -1,8 +1,12 @@
 .loginContainer{
+    text-align: center;
     width: 100%;
+    height: auto;
     max-width: 100%;
     box-sizing: border-box;
     height: auto;
+    margin-bottom: 5%;
+
 }
 
 .loginContainer h4, h2{
@@ -15,39 +19,15 @@
     height: 200px;
     position: absolute;
     transform: translate(-50%,-50%);
-    left: 50%;
     top: 60%;
 }
-.backgroundFormLogin .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
+
 .formLogin{
+    margin: auto;
     height: 615px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
-    position:relative;
     border-radius: 10px;
-    left: 35%;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
@@ -65,7 +45,6 @@
     border-radius: 50%;
     width: 40%;
     padding: 0%;
-    margin-left: 30%;
 }
 
 .formLogin label{
@@ -76,7 +55,6 @@
 }
 .formLogin input{
     color: white;
-    display: block;
     height: 50px;
     width: 100%;
     background-color: rgba(255,255,255,0.07);
@@ -100,28 +78,6 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.socialLogin{
-  margin-top: 30px;
-  display: flex;
-}
-.socialLogin div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.socialLogin div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.socialLogin .fb{
-  margin-left: 25px;
-}
-.socialLogin i{
-  margin-right: 4px;
-}
 
 @media (max-width: 880px) {
 
@@ -129,11 +85,6 @@
 		font: bold 12px sans-serif;
 
 	}
-
-    .backgroundFormLogin{
-        left: 35%;
-        top: 85%;
-    }
 
     .backgroundFormLogin .shape{
         height: 100px;

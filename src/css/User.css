@@ -1,15 +1,14 @@
 .cntInfoUser{
+    margin: auto;
+    text-align: center;
     display: flex;
     width: 30%;
-    margin-left: 35%;
     color: white;
 }
-
 
 .card {
     width: 500%;
 }
-
 .cntData{
     color: white;
 }
@@ -41,4 +40,14 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+}
+
+
+@media (max-width: 880px) {
+    .cntInfoUser{
+        display: flex;
+        width: 22%;
+        margin-left: 10%;
+        color: white;
+    }
 }

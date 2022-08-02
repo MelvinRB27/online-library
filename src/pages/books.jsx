@@ -1,24 +1,36 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import '../css/books.css';
-// import Aside from '../components/Aside';
 import BookCard from '../cards/BookCard';
+import bookName from '../img/books.png'
 
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
 
-import SearchB from '../cards/SearchB';
 import ValidateToken from '../js/validateToken';
 
 import Spinner from '../components/Spinner';
 
-import useFetch from '../hooks/useFetch';
+// import useFetch from '../hooks/useFetch';
+import apiAJAX from '../hooks/apiAJAX';
 
 import Swal from 'sweetalert2';
 
 
-const Books = ({ url, title } ) => {
+const Books = ({ url, title, } ) => {
 
-    const [book, error] = useFetch(url);
+    const [book, error] = apiAJAX(url);
     const [errorToken] = ValidateToken()
+
+    const userData = JSON.parse(window.localStorage.getItem('userData'))
+
+    function deleteBook(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
 
     const redirect = useNavigate()
 
@@ -37,57 +49,69 @@ const Books = ({ url, title } ) => {
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[errorToken])
-        
-   
+
+    
     if (error) { return (
-        <>
+        <div className="spinnerLoading">
             <p>An error occurred while trying to connect to the server</p>
             <Spinner />
-        </>
+        </div>
     )}
 
-    return (
-        
+    return ( 
         <div className="conataierBooks">
-        
-            {/* {title && <Aside/>} */}
-            
+
             <div className='containerDivBooks'>
-                {title && <h2 className='titlePage'><b>BOOKS</b></h2>}
-                {title && <SearchB/>}
+                {title && <div className='titleBOOK'> <div className='titlePage' > <img alt='book' src={bookName}/> </div> </div>}
                 
                 {book.length === 0 && 
                     <Spinner />
                 }
                 {
                     book.map(({
-                        Id,
+                        ID,
                         author,
                         title,
-                        age,
+                        publisher_date,
                         pages,
-                        cover
+                        cover,
+                        url_details,
+                        url_download
                     }) => {
+
                         return(
-                            <div key={Id}>
+                            
+                            <div className="bookCardContainer" id={ID} key={ID}>
                                 <BookCard 
                                     author={author}
                                     title={title}
-                                    age={age}
+                                    age={publisher_date}
                                     pages={pages}
                                     cover={cover}
                                 />
+                                <div className='btns'>
+                                    <a href={url_download} target='_blank' rel="noreferrer" className="btn btn-primary">DOWNLOAD</a>
+                                    <a href={url_details} target='_blank' rel="noreferrer" className="btn btn-success">DETAILS</a>
+                                    {userData.data.roles === "Admin" ?
+                                    (
+                                        <button className='btn btn-danger' onClick={() => deleteBook(ID)} >Delete</button>
+
+                                    ) : <></>
+
+                                    }
+
+                                </div>
                             </div>
-                        )                    
+                        )             
                     })
 
                 }
                         
             </div>
         </div>
-
     )
     
+
 }
 
 export default Books;

@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 .registerContainer{
+    text-align: center;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     height: auto;
+    margin-bottom: 5%;
+
 }
 
 h2{
@@ -28,37 +31,12 @@ h2{
     left: 50%;
     top: 70%;
 }
-.backgroundFormRegister .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -100px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
+
 .formRegister{
-    display: block;
+    margin: auto;
     height: 1150px;
     width: 450px;
     background-color: rgba(255,255,255,0.13);
-    position: relative;
-    top: 50%;
-    left: 35%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
@@ -83,7 +61,6 @@ h2{
     border-radius: 50%;
     width: 40%;
     padding: 0%;
-    margin-left: 30%;
 }
 
 .formRegister label{
@@ -124,36 +101,8 @@ h2{
     border-radius: 5px;
     cursor: pointer;
 }
-.socialRegister{
-  margin-top: 30px;
-  display: flex;
-}
-.socialRegister div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.socialRegister div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.socialRegister .fb{
-  margin-left: 25px;
-}
-.socialRegister i{
-  margin-right: 4px;
-}
-
 
 @media (max-width: 880px) {
-
-    .backgroundFormRegister{
-        left: 35%;
-        top: 85%;
-    }
 
     .backgroundFormRegister .shape{
         height: 127px;
@@ -166,7 +115,6 @@ h2{
     
     .formRegister{
         width: 300px;
-        left: 15%;
     }
 
 }

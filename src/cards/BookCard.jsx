@@ -1,10 +1,8 @@
 import '../css/bookCard.css';
 
 const BookCard = ({author, title, age, pages, cover}) => {
-    const userData = JSON.parse(window.localStorage.getItem('userData'))
-    console.log(userData.data.roles)
     return(
-        <div>
+        <div className="bookCardCtn">
             <div id="containerCardBook">	
                 <div className="product-image">
                     <img src={cover} alt=""/>
@@ -17,17 +15,7 @@ const BookCard = ({author, title, age, pages, cover}) => {
                             <li><strong>Age: </strong>{age}</li>
                         </ul>
                     </div>
-                </div>
-                {userData.data.roles === "Admin" ?
-                    (
-                        <>
-                            <button className='btn btn-primary'>Edit</button>
-                            <button className='btn btn-danger'>Delete</button>
-                        </>
-
-                    ) : <></>
-
-                    }
+                </div> 
             </div>
         </div>
     )

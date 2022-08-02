@@ -5,7 +5,6 @@
 	max-width: 100%;
 	box-sizing: border-box;
 	height: auto;
-	margin-top: 5%;
 }
 * {
   font-family: Open Sans;
@@ -216,7 +215,7 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media screen and (max-width: 880px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;

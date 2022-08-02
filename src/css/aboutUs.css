@@ -1,15 +1,18 @@
 .mainAboutUs{
+    text-align: center;
     width: 100%;
     max-width: 100%;
     height: auto;
+    margin-left: 2%;
+  margin-bottom: 5%;
+
 }
 
-.titlePage{
-    text-align: center;    
+.containerAboutUs{
+    text-align: center;
 }
-
 .containerParagraph{
-    margin-left: 37%;
+    margin:auto;
     width: 25%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
@@ -21,24 +24,25 @@
 }
 
 .containerPhotoMelvin{
+    margin: auto;
     display: inline-block;
     width: 25%;
-    margin-left: 15%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
 
 .containerPhotoJose{
-    padding-top: 3.8%;
     display: inline-block;
     width: 25%;
     margin-left: 15%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
+.containerPhotoJose img{
+    height: 280px;
+}
 
 .containerPerfil img{
-    margin-left: 25%;
     width: 50%;
     padding: 2%;
 }

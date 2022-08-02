@@ -1,5 +1,17 @@
+.ctnBanner{
+  text-align: center;
+  
+}
 .bannerContainer{
-    margin-left: 5%;
+  text-align: center;
+}
+
+.titlePageHome{
+  margin: auto;
+}
+
+.titlePageHome img{
+  width: 300px;
 }
 
 .responsive-banner {
@@ -22,12 +34,10 @@ h1{
     color: white;
 }
 .responsive-banner.second {
-  background-image: linear-gradient(to bottom right, #f4c28e, #ca1f1f);
+  background-image: linear-gradient(to bottom right, #cf883c, #ca1f1f);
 }
 .responsive-banner.third {
-  background-image: linear-gradient(to bottom right, #74e558, #74dac4);
-  margin-left: 29%;
-  margin-right:29% ;
+  background-image: linear-gradient(to bottom right, #1a4a0e, #74dac4);
 }
 
 
@@ -39,8 +49,6 @@ h1{
 }
 .responsive-banner.third-login {
   background-image: linear-gradient(to bottom right, #062f50, #502626);
-  margin-left: 29%;
-  margin-right:29% ;
 }
 
 .container-envelope {
@@ -65,16 +73,6 @@ h1{
   align-self: flex-end;
 }
 
-@media (min-width: 650px) {
-  .col-xs-12 {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-  }
-  .container-envelope {
-    max-width: calc(100% - 200px);
-  }
-}
 .container-envelope p {
   clear: both;
   font-family: "Work Sans", Helvetica, sans-serif;
@@ -134,19 +132,12 @@ h1 {
 .link-containerBanner {
   text-align: center;
 }
-.link-containerBanner .more-link {
+.more-link {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  background-color: #0e11ce;
-  color: #fff;
-  display: inline-block;
-  margin-right: 20%;
-  margin-left: 15%;
-  margin-bottom: 5px;
-  line-height: 1.5;
-  text-decoration: none;
-  text-transform: none;
+  background-color: #0e11ce52;
+  color: white;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 
@@ -154,7 +145,6 @@ h1 {
   .responsive-banner {
     display: inline-flex;
     margin: 10px;
-    margin-left: 5%;
     width: 60%;
     max-width: 490px;
     min-width: 320px;
@@ -164,20 +154,23 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     background-repeat: no-repeat;
-    text-align: left;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .titlePageHome{
+    margin: auto;
+  }
+
+  .titlePageHome img{
+    width: 150px;
   }
 
   .responsive-banner.third {
     background-image: linear-gradient(to bottom right, #74e558, #74dac4);
-    margin-left: 5%;
-    margin-right:0% ;
   }
 
   .responsive-banner.third-login  {
     background-image: linear-gradient(to bottom right, #062f50, #502626);
-    margin-left: 5%;
-    margin-right:0% ;
   }
 
 }

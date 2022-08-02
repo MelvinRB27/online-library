@@ -1,19 +1,29 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const Fetch = ( {dataa} ) => {
+const Fetch = (uri) => {
     const [data, setData] = useState([])
     const [error, setError] = useState()
-    console.log(data)
+
     useEffect(() => {
-      // POST request using axios inside useEffect React hook
+      // GET  request using axios inside useEffect React hook
       const getBooks = async() =>{
-         await axios.post('http://localhost:8080/v1/register', dataa)
-         .then(response => setData(response.data.id))
-         .catch(error => setError(error))
+
+        await axios({
+          method: 'get',
+          url: `https://www.etnassoft.com/api/v1/get/`+uri,
+        })
+        .then(function (response) {
+          // console.log(response.data)
+          setData(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+          setError(error);
+        });
      }
      getBooks()
-   }, [dataa]);
+   }, [uri]);
     return [data, error]
 }
 

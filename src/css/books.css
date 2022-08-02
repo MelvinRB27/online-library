@@ -1,26 +1,47 @@
-.conataierBooks{
-    display: inline-table;
-    width: 100%;
-    height: auto;
-}
-
-.conataierDivBooks{
-    width: 85%;
-    max-width: 100%;
-    box-sizing: border-box;
-    float: left;
+.titleBOOK{
+    text-align: center;
 }
 
 .titlePage{
-    margin-right: 10%;
+    margin: auto;
 }
 
+.titlePage img{
+    width: 250px;
+}
 
+.conataierBooks{
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.conataierDivBooks{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.bookCardContainer{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+.btns{
+    display:grid;
+    width: auto;
+    margin-top: 4%;
+}
 
 @media (max-width: 880px) {
-    .conataierDivBooks{
-        width: 20%;
-        max-width: 100%;
-        box-sizing: border-box;
+   .bookCardContainer{
+    width: 100%;
+   }
+ 
+    .btns{
+        width: 40%;
+		display: inline-block;
+
     }
 }

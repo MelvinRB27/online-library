@@ -1,14 +1,16 @@
 import '../css/offers.css';
 import Books from './books';
+import offersNAME from '../img/offers.png'
 
 
 const Offers = () => (
-    <>
-        <h2 className='titlePage'><b>OFFERS</b></h2>
+    <div className="ctnOffers">
+        <div className='titleBOOK'> <div className='titlePage' > <img alt='book' src={offersNAME}/> </div> </div>
+        <br/>
         <div className='ctnBookHome'>
-                <Books url="books?offer_like=true"/>
-            </div>
-    </>
+            <Books url="?most_viewed "/>
+        </div>
+    </div>
 )
 
 export default Offers;

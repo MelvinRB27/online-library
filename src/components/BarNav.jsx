@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink,  } from 'react-router-dom';
 import '../css/BarNav.css';
 // import Logo from '../img/Library (3).png';
 import AvatarMen from '../img/avatars/AvatarMen.png'
@@ -34,7 +34,7 @@ const Header = () => {
     }
     
     return (    
-        <div className='conataierHeader'>
+        <div className='conataierBarNav'>
             <header className="header sticky sticky--top js-header">
                 <div className="grid">
                     <nav className="navigation">

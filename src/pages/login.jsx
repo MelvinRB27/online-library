@@ -2,6 +2,7 @@ import '../css/login.css';
 
 import {Link, useNavigate} from 'react-router-dom';
 import Logo from '../img/Library (3).png';
+import loginNAME from '../img/login.png'
 import { useState, useEffect } from 'react';
 import loginApi from '../js/loginAPI';
 
@@ -42,11 +43,8 @@ const Login = () => {
 
     return(
         <div className="loginContainer">
-            <h2>Login Here</h2>
-            {/* <div className="backgroundFormLogin">
-                <div className="shape"></div>
-                <div className="shape"></div>
-            </div> */}
+        <div className='titlePage' > <img alt='book' src={loginNAME}/> </div>
+            
             <form className='formLogin' onSubmit={formSubmit}>
 
                 <img src={Logo} alt="Logo" />
