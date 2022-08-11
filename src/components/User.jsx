@@ -38,13 +38,13 @@ const UserPage = () => {
      
      //This is to know the gender of the registered person 
      //and put an avatar according to their gender
-     if (userData.data.gender === 'Woman') {
+     if (userData.data.Gender === 'Woman') {
         perfil = AvatarWoman
-     }else if (userData.data.gender === 'Men' && userData.data.name === 'Huascar'){
+     }else if (userData.data.Gender === 'Men' && userData.data.Name === 'Huascar'){
         perfil  = AvatarHuascar
-     }else if (userData.data.gender === 'Men' && userData.data.name === 'José'){
+     }else if (userData.data.Gender === 'Men' && userData.data.Name === 'José'){
         perfil  = AvatarJose
-     }else if (userData.data.gender === 'Men' && userData.data.name === 'Melvin'){
+     }else if (userData.data.Gender === 'Men' && userData.data.Name === 'Melvin'){
         perfil  = AvatarMelvin
      }
      else perfil = AvatarMen
@@ -71,11 +71,11 @@ const UserPage = () => {
                         </div>
                         
                         <div className="cntData">
-                            <h3><b>Name:</b> <br/> {userData.data.name}</h3>
-                            <h3><b>Last Name:</b> <br/>  {userData.data.last_name}</h3>
+                            <h3><b>Name:</b> <br/> {userData.data.Name}</h3>
+                            <h3><b>Last Name:</b> <br/>  {userData.data.LastName}</h3>
                             <h3><b>Email:</b> <br/>  {userData.data.UserName}</h3>
-                            <h3><b>Gender:</b> <br/>  {userData.data.gender}</h3>
-                            <h3><b>Rol:</b> <br/>  {userData.data.roles}</h3>
+                            <h3><b>Gender:</b> <br/>  {userData.data.Gender}</h3>
+                            <h3><b>Rol:</b> <br/>  {userData.data.Rol}</h3>
                         </div>
                         <button className="btn btn-primary" onClick={() => redirect("/update_Register")} >EDIT INFO</button>
                     </div>

@@ -3,9 +3,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    margin-left: 2%;
-  margin-bottom: 5%;
-
+    margin-bottom: 5%;
 }
 
 .containerAboutUs{
@@ -22,24 +20,29 @@
     color: white;
     text-align: center;
 }
+.ctnInfCEOS{
+    display: flex;
+
+}
 
 .containerPhotoMelvin{
     margin: auto;
-    display: inline-block;
+    height: 500px;
     width: 25%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
 
 .containerPhotoJose{
-    display: inline-block;
+    margin: auto;
+    height: 500px;
     width: 25%;
     margin-left: 15%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
 .containerPhotoJose img{
-    height: 280px;
+    height: 230px;
 }
 
 .containerPerfil img{
@@ -81,20 +84,18 @@
         border-bottom: 5px solid green;
     }
 
+    .ctnInfCEOS{
+        display: inline;
+    }
+
     .containerPhotoMelvin{
-        display: inline-block;
         width: 75%;
-        margin-left: 15%;margin-bottom: 20px;
-        border-top: 5px solid red;
-        border-bottom: 5px solid green;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     .containerPhotoJose{
-        padding-top: 3.8%;
-        display: inline-block;
-        width: 75%;
-        margin-left: 15%;
-        border-top: 5px solid red;
-        border-bottom: 5px solid green;
+        width: 75%;        
+        margin: auto;
     }
 }

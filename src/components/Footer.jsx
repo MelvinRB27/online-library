@@ -2,7 +2,7 @@ import '../css/Footer.css'
 import Logo from '../img/Library (3).png';
 import Nortic from '../img/A5ReglaNortic.png';
 
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
     
@@ -20,18 +20,6 @@ const Footer = () => (
 
             <div className="footer-center">
 
-                <p className="footer-links">
-
-                    <NavLink className="active navigation__link " to="/">Home</NavLink>
-                    <NavLink className="active navigation__link" to="/books" >Books</NavLink>
-                    <NavLink className="active navigation__link" to="/offers">Offers</NavLink>
-                    <NavLink className="active navigation__link" to="/aboutUs">About</NavLink>
-                    <NavLink className="active navigation__link" to="/contact">Contact</NavLink>
-                    <NavLink className="active navigation__link" to="/register">Register</NavLink>
-                    <NavLink className="active navigation__link" to="/login">Login</NavLink>
-
-                </p>
-
                 <div>
                     <i className="fa fa-map-marker"></i>
                     <p>Santo Domingo, Dominican Republic</p>
@@ -44,7 +32,7 @@ const Footer = () => (
 
                 <div>
                     <i className="fa fa-envelope"></i>
-                    <p><a href="mailto:support@LibraryMJ.com">support@LibraryMJ.com</a></p>
+                    <p><a href="mailto:support@LibraryMJ.com">LibraryMJ.RD@gmail.com</a></p>
                 </div>
 
             </div>
@@ -54,8 +42,8 @@ const Footer = () => (
                 <p className="footer-company-about">
                     <span>About the company</span>
 
-                    <b>Library MJ</b> is an online library that is responsible for 
-                    providing different types of books, so that users can rent, buy and share it.
+                    <b>Library MJ</b> is an online library that is responsible 
+                    for providing different types of books, so that users can download and share them.
 
                     <br/>
                     <br/>
@@ -65,7 +53,11 @@ const Footer = () => (
 
                 <br/>
 
-                <p className="footer-company-about">
+            </div>
+
+            <div className="footer-right">
+                
+            <p className="footer-company-about">
                     <span>CEOS</span>
                 </p>
 

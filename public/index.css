@@ -1,7 +1,9 @@
 #root{
-    width: 100%;
+    width: 100%/100vw ;
     height: auto;
+    min-height:100vh;
     max-width: 100%;
+    position: relative;
     background-color:rgb(6, 0, 20);
     background: linear-gradient(
         rgb(4, 1, 49),

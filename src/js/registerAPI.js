@@ -3,7 +3,6 @@ import Swal from 'sweetalert2';
 
 
 const RegisterApi = (name, lastName, userName, gender, rol, password, passwordConfirm) => {
-    console.log("BUENOOO",gender, rol)
 
     var FormData = require('form-data');
     var data = new FormData();
@@ -32,7 +31,7 @@ const RegisterApi = (name, lastName, userName, gender, rol, password, passwordCo
         })
     }
 
-    axios.post('http://localhost:8080/v1/register',data)
+    axios.post('https://login-server-go.herokuapp.com/v1/register',data)
     .then(function (response) {
         console.log(response.data);
         alertSuccess(response.data.message)

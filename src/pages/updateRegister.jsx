@@ -53,7 +53,7 @@ const Register = () => {
                 <div className="shape"></div>
                 <div className="shape"></div>
             </div>
-            <h2><b>Register now</b>, to enjoy the best books online</h2>
+            <h2><b>Update profile</b></h2>
             <form className="formRegister" onSubmit={formSubmit}>
                 <img src={Logo} alt="Logo" /> <br/>
 
@@ -80,7 +80,7 @@ const Register = () => {
                 <label>Select rol</label>
                 <select className="form-control "  onChange={(event) => setRol(event.target.value)} required>
                     <option > Select Rol</option>
-                    <option value="Admin"> Admin </option>
+                    <option value="Visit"> Visit </option>
 
                     <option value="User"> User </option>
                 </select>
@@ -98,7 +98,7 @@ const Register = () => {
                     onChange={(event) => setPasswordConfirm(event.target.value)}
                 />
 
-                <button className="btnRegister" onClick={() => UpdateRegister(name, lastName, gender, rol, password, passwordConfirm)}>Register</button>
+                <button className="btnRegister" onClick={() => UpdateRegister(name, lastName, gender, rol, password, passwordConfirm)}>Update</button>
                
             </form>
         </div>

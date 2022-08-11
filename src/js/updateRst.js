@@ -37,7 +37,7 @@ const UpdateRegister = (name, lastName, gender, rol, password, passwordConfirm) 
 
     var config = {
         method: 'put',
-        url: 'http://localhost:8080/v1/update',
+        url: 'https://login-server-go.herokuapp.com/v1/update',
         headers: {
             "Access-Control-Allow-Origin": "*", 
             "Access-Control-Allow-Headers": 

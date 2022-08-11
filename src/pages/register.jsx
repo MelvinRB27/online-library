@@ -19,8 +19,6 @@ const Register = () => {
     const [password, setPassword] = useState("")
     const [passwordConfirm, setPasswordConfirm] = useState("")
 
-    console.log(name, lastName, username, gender, rol, password, passwordConfirm)
-
     const [errorToken] = ValidateToken()
 
     let redirect = useNavigate()
@@ -89,7 +87,7 @@ const Register = () => {
                 <label>Select rol</label>
                 <select className="form-control "  onChange={(event) => setRol(event.target.value)} required>
                     <option > Select Rol</option>
-                    <option value="Admin"> Admin </option>
+                    <option value="Visit"> Visit </option>
 
                     <option value="User"> User </option>
                 </select>

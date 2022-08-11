@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../css/SearchB.css';
+import {Link} from 'react-router-dom';
 
 import Books from './books';
 
@@ -7,6 +8,9 @@ const SearchBook = () => {
 
   const [category, setCategory] = useState("?category=programacion");
   let search = "";
+
+  const userData = JSON.parse(window.localStorage.getItem('userData'))
+
 
   return (
     <div>
@@ -16,6 +20,7 @@ const SearchBook = () => {
         <div className='inputSearch'>
           <input type="text" className='from-control' placeholder='Search' onChange={(event) => search = "?keyword="+event.target.value}/>
           <button type="button" className="btn btn-outline-danger" onClick={() => setCategory(search)}>Search</button>
+          
         </div>
 
         <div>
@@ -43,7 +48,7 @@ const SearchBook = () => {
               <option value="?category=marketing_y_business"> Marketing / Business	 </option>
           </select>
         </div>
-          
+        {userData && userData.data.Rol === "Admin" ? (<Link to="/add-book" className="btn btn-dark">Add book</Link>): <></>}
       </div>
 
       <br/>

@@ -34,6 +34,12 @@
     margin-top: 4%;
 }
 
+.btns .btn:hover{
+    font-size: 30px;
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 880px) {
    .bookCardContainer{
     width: 100%;
@@ -43,5 +49,11 @@
         width: 40%;
 		display: inline-block;
 
+    }
+    .bookCardContainer{
+        padding-left: 2%;
+        padding-right: 2%;
+        display: inline-block;
+        left: 0;
     }
 }

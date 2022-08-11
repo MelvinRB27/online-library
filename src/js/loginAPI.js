@@ -31,7 +31,7 @@ const LoginApi = (userName, password) => {
         })
     }
 
-    axios.post('http://localhost:8080/v1/login',data)
+    axios.post('https://login-server-go.herokuapp.com/v1/login',data)
     .then(function (response) {
         console.log(response.data);
         alertSuccess(response.data.message)

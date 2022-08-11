@@ -10,8 +10,8 @@ const AboutUs = () => (
         <div className="containerAboutUs">
             <div className="containerParagraph">
                 <p>
-                <b>Library MJ</b> is an online library that is responsible for 
-                providing different types of books, so that users can rent, buy and share it.
+                <b>Library MJ</b> is an online library that is responsible 
+                    for providing different types of books, so that users can download and share them.
 
                 <br/>
                 <br/>
@@ -23,7 +23,7 @@ const AboutUs = () => (
 
         <br/>
 
-        <div>
+        <div className="ctnInfCEOS">
             <div className="containerPhotoMelvin">
                 <div className='containerPerfil'>
                     <img src={MelvinPerfil} alt="Perfil Melvin"/>

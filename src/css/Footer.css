@@ -11,13 +11,15 @@
 }
 
 .footer-logo img{
+	margin: auto;
     display: block;
-    width: 75%;
+    width: 60%;
 	border: 50%;
 	border-radius: 50%;
 }
 .footer-distributed .footer-left p{
-	margin-right: 22%;
+	margin: auto;
+	margin-top: 1%;
 }
 
 .footer-distributed{
@@ -41,10 +43,8 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 30%;
-	padding-left: 2%;
+	width: 20%;
 }
-
 
 /* The company logo */
 
@@ -85,7 +85,7 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 50%;
+	width: 35%;
 }
 
 .footer-distributed .footer-center i{
@@ -143,6 +143,7 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
+	margin-left: 2%;
 	width: 20%;
 }
 
@@ -226,17 +227,13 @@
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
+		margin: auto;
 		margin-bottom: 40px;
-		text-align: center;
+		
 	}
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
 
-	.footer-logo img{
-		margin-left: 35px;
-		padding: 10px;
-	}
-	
 }

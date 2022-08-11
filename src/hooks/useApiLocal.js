@@ -7,7 +7,7 @@ const Fetch = ( endpoint ) => {
     
     useEffect( () => {
         const getBooks = async() =>{
-            await get(`${process.env.REACT_APP_URL_API}${endpoint}`)
+            await get("http://localhost:3000/"+endpoint)
             .then(({data}) => setBook(data))
             .catch((e) => setError(e))
         }

@@ -1,185 +1,185 @@
 {
-   "books": [
+  "books": [
     {
-    "Id":1,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-46e27bb5bb18d1354f5acc1d96454f60_screen.jpg?ts=1637015775",
-    "offer":true
+      "id": 17068,
+      "author": "Varios",
+      "title": "The MagPi #80",
+      "publisher_date": "2019",
+      "pages": "100",
+      "cover": "https://olcovers2.blob.core.windows.net/coverswp/2019/03/MagPi80_OpenLibra-350x461.gif",
+      "url_details": "https://www.etnassoft.com/biblioteca/the-magpi-80/",
+      "url_download": "https://openlibra.com/book/the-magpi-80"
     },
-
     {
-    "Id":2,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-fe1040a9952994208fcae6066ab78f2b_screen.jpg?ts=1636980773",
-    "offer":false
+      "id": 1,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": "250",
+      "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-46e27bb5bb18d1354f5acc1d96454f60_screen.jpg?ts=1637015775",
+      "offer": true
     },
-
     {
-    "Id":3,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg",
-    "offer":false
+      "id": 2,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vintage-book-cover-template-design-fe1040a9952994208fcae6066ab78f2b_screen.jpg?ts=1636980773",
+      "offer": false
     },
-
     {
-    "Id":4,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://i.pinimg.com/originals/91/bb/68/91bb68fd107de6780beb79998351e87f.jpg",
-    "offer":true
+      "id": 3,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg",
+      "offer": false
     },
-
     {
-    "Id":5,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://www.adobe.com/es/express/create/cover/media_18d86248e8c6c00f18e7461e58ee5291a8485f45f.png?width=400&format=png&optimize=medium",
-    "offer":false
+      "id": 4,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://i.pinimg.com/originals/91/bb/68/91bb68fd107de6780beb79998351e87f.jpg",
+      "offer": true
     },
-
     {
-    "Id":6,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?width=400&format=png&optimize=medium",
-    "offer":false
+      "id": 5,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://www.adobe.com/es/express/create/cover/media_18d86248e8c6c00f18e7461e58ee5291a8485f45f.png?wIDth=400&format=png&optimize=medium",
+      "offer": false
     },
-
     {
-    "Id":7,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://th.bing.com/th/id/OIP.R1NL88HGRuMTQJhq17PVsAAAAA?pid=ImgDet&rs=1",
-    "offer":false
+      "id": 6,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://www.adobe.com/es/express/create/cover/media_10487a00f81e45735d68f68bc2739b65bb4997de1.png?wIDth=400&format=png&optimize=medium",
+      "offer": false
     },
-
     {
-    "Id":8,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://th.bing.com/th/id/R.06d71c79e84305dd15bed77ca6fe0cbd?rik=gaeosLsMia62jQ&pid=ImgRaw&r=0",
-    "offer":false
+      "id": 7,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/OIP.R1NL88HGRuMTQJhq17PVsAAAAA?pid=ImgDet&rs=1",
+      "offer": false
     },
-
     {
-    "Id":9,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg",
-    "offer":false
+      "id": 8,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/R.06d71c79e84305dd15bed77ca6fe0cbd?rik=gaeosLsMia62jQ&pid=ImgRaw&r=0",
+      "offer": false
     },
-
     {
-    "Id":10,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://m.media-amazon.com/images/I/51OPkZjcZJL.jpg",
-    "offer":false
+      "id": 9,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://i.pinimg.com/originals/f5/da/90/f5da901de158988c7825960c669c0078.jpg",
+      "offer": false
     },
-
     {
-    "Id":11,
-    "author": "Melvin",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://th.bing.com/th/id/OIP.ttcjiRPQ5fYkz72BvhS9igAAAA?pid=ImgDet&rs=1",
-    "offer":false
+      "id": 10,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://m.media-amazon.com/images/I/51OPkZjcZJL.jpg",
+      "offer": false
     },
-
     {
-    "Id":12,
-    "author": "José",
-    "title": "BOOKSSSSSS",
-    "age": 2010,
-    "pages": 250,
-    "cover": "https://th.bing.com/th/id/OIP.37obWrDNSANlf2tVs3q6FQHaJ4?pid=ImgDet&w=1536&h=2048&rs=1",
-    "offer":false
+      "id": 11,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/OIP.ttcjiRPQ5fYkz72BvhS9igAAAA?pid=ImgDet&rs=1",
+      "offer": false
     },
-
     {
-        "Id":13,
-        "author": "Melvin",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://th.bing.com/th/id/R.417f47901d3b75ce9bfa32274bb6d8c2?rik=Qfo%2bexmdR2i24g&pid=ImgRaw&r=0",
-        "offer":false
-        },
-    
-        {
-        "Id":14,
-        "author": "José",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://th.bing.com/th/id/R.3d6e9d324ba5402bd51989522f16c2e7?rik=mVR8AE4dPZK1fQ&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9781914038433_p0_v1_s1200x630.jpg&ehk=SVB4H9vCGlUNFOwF3rUG8CmZBYkbZOEptf%2fw218OkxE%3d&risl=&pid=ImgRaw&r=0",
-        "offer":false
-        },
-    
-        {
-        "Id":15,
-        "author": "Melvin",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://i.pinimg.com/originals/26/90/24/26902454d69b8e3ccc644fc3740b04c6.jpg",
-        "offer":false
-        },
-    
-        {
-        "Id":16,
-        "author": "José",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://th.bing.com/th/id/R.f3204be7e4d3fa02f9a11d83587a3f16?rik=j0kwZXONAvqU6A&pid=ImgRaw&r=0",
-        "offer":false
-        },
-    
-        {
-        "Id":17,
-        "author": "Melvin",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://i1.wp.com/bloody-disgusting.com/wp-content/uploads/2017/11/s9.jpg",
-        "offer":true
-        },
-    
-        {
-        "Id":18,
-        "author": "José",
-        "title": "BOOKSSSSSS",
-        "age": 2010,
-        "pages": 250,
-        "cover": "https://th.bing.com/th/id/OIP.KXkG6PghJ4vnRSOh3y2wUwHaJ3?pid=ImgDet&w=1000&h=1333&rs=1",
-        "offer":false
-        }
-
-
-    ]
+      "id": 12,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/OIP.37obWrDNSANlf2tVs3q6FQHaJ4?pid=ImgDet&w=1536&h=2048&rs=1",
+      "offer": false
+    },
+    {
+      "id": 13,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/R.417f47901d3b75ce9bfa32274bb6d8c2?rik=Qfo%2bexmdR2i24g&pid=ImgRaw&r=0",
+      "offer": false
+    },
+    {
+      "id": 14,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/R.3d6e9d324ba5402bd51989522f16c2e7?rik=mVR8AE4dPZK1fQ&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9781914038433_p0_v1_s1200x630.jpg&ehk=SVB4H9vCGlUNFOwF3rUG8CmZBYkbZOEptf%2fw218OkxE%3d&risl=&pid=ImgRaw&r=0",
+      "offer": false
+    },
+    {
+      "id": 15,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://i.pinimg.com/originals/26/90/24/26902454d69b8e3ccc644fc3740b04c6.jpg",
+      "offer": false
+    },
+    {
+      "id": 16,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/R.f3204be7e4d3fa02f9a11d83587a3f16?rik=j0kwZXONAvqU6A&pid=ImgRaw&r=0",
+      "offer": false
+    },
+    {
+      "id": 17,
+      "author": "Melvin",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://i1.wp.com/bloody-disgusting.com/wp-content/uploads/2017/11/s9.jpg",
+      "offer": true
+    },
+    {
+      "id": 18,
+      "author": "José",
+      "title": "BOOKSSSSSS",
+      "publisher_date": 2010,
+      "pages": 250,
+      "cover": "https://th.bing.com/th/id/OIP.KXkG6PghJ4vnRSOh3y2wUwHaJ3?pid=ImgDet&w=1000&h=1333&rs=1",
+      "offer": false
+    },
+    {
+      "id": 17069,
+      "author": "Melvin",
+      "title": "JavaScript Dominicano",
+      "publisher_date": "2023",
+      "pages": "120",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "url_download": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+    }
+  ]
 }

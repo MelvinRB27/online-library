@@ -1,6 +1,6 @@
 import { NavLink,  } from 'react-router-dom';
 import '../css/BarNav.css';
-// import Logo from '../img/Library (3).png';
+
 import AvatarMen from '../img/avatars/AvatarMen.png'
 import AvatarWoman from '../img/avatars/AvatarWoman.png'
 import AvatarHuascar from '../img/avatars/AvatarHusacar.png'
@@ -21,13 +21,13 @@ const Header = () => {
     //and put an avatar according to their gender
     if (!errorToken){
         
-        if (dataUser.data.gender === 'Woman') {
+        if (dataUser.data.Gender === 'Woman') {
             perfil = AvatarWoman
-         }else if (dataUser.data.gender === 'Men' && dataUser.data.name === 'Huascar'){
+         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Huascar'){
             perfil  = AvatarHuascar
-         }else if (dataUser.data.gender === 'Men' && dataUser.data.name === 'José'){
+         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'José'){
             perfil  = AvatarJose
-         }else if (dataUser.data.gender === 'Men' && dataUser.data.name === 'Melvin'){
+         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Melvin'){
             perfil  = AvatarMelvin
          }
          else perfil = AvatarMen
@@ -59,11 +59,11 @@ const Header = () => {
                                 <>
                                     <div className="infoUser">
 
-                                        <li className="name navigation__item"><NavLink className="active navigation__link" to="/user"><p>{dataUser.data.name}</p></NavLink></li>
+                                        <li className="name navigation__item"><NavLink className="active navigation__link" to="/user"><p>{dataUser.data.Name}</p></NavLink></li>
                                         <div className="avatar">
                                             <img alt="" src={perfil}/>
                                         </div>
-                                        <h4>{dataUser.data.roles}</h4>
+                                        <h4>{dataUser.data.Rol}</h4>
 
                                     </div>
                                     <ButtonLogout />

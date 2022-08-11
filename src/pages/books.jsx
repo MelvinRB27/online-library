@@ -3,22 +3,22 @@ import '../css/books.css';
 import BookCard from '../cards/BookCard';
 import bookName from '../img/books.png'
 
-import {useNavigate} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
 
 import ValidateToken from '../js/validateToken';
 
 import Spinner from '../components/Spinner';
 
-// import useFetch from '../hooks/useFetch';
-import apiAJAX from '../hooks/apiAJAX';
+import useApiPublic from '../hooks/useApiPublic';
 
 import Swal from 'sweetalert2';
 
 
 const Books = ({ url, title, } ) => {
 
-    const [book, error] = apiAJAX(url);
+    const [book, error] = useApiPublic(url);
+
     const [errorToken] = ValidateToken()
 
     const userData = JSON.parse(window.localStorage.getItem('userData'))
@@ -75,13 +75,13 @@ const Books = ({ url, title, } ) => {
                         publisher_date,
                         pages,
                         cover,
-                        url_details,
                         url_download
                     }) => {
 
                         return(
                             
                             <div className="bookCardContainer" id={ID} key={ID}>
+                                
                                 <BookCard 
                                     author={author}
                                     title={title}
@@ -91,8 +91,8 @@ const Books = ({ url, title, } ) => {
                                 />
                                 <div className='btns'>
                                     <a href={url_download} target='_blank' rel="noreferrer" className="btn btn-primary">DOWNLOAD</a>
-                                    <a href={url_details} target='_blank' rel="noreferrer" className="btn btn-success">DETAILS</a>
-                                    {userData.data.roles === "Admin" ?
+                                    <Link to={`/detail-book/${ID}`}  className="btn btn-success">DETAILS </Link>
+                                    {userData.data.Rol === "Admin" ?
                                     (
                                         <button className='btn btn-danger' onClick={() => deleteBook(ID)} >Delete</button>
 
@@ -106,7 +106,7 @@ const Books = ({ url, title, } ) => {
                     })
 
                 }
-                        
+                    
             </div>
         </div>
     )

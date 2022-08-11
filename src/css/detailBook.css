@@ -1,0 +1,33 @@
+.containerBookDitals{
+    width: 100%;
+    text-align: center;
+}
+
+.divDetails{
+    text-align: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cntDetails{
+    text-align: center;
+    display: inline-flex;
+}
+
+.cntDetailsInfor{
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+}
+
+@media (max-width: 880px) {
+
+	.containerBookDitals{
+        display: inline-block;
+    }
+
+    .cntDetails{
+        margin: auto;
+    }
+}

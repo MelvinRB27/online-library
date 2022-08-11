@@ -14,6 +14,7 @@
     width: 100%;
     border: 5px;
     border-radius: 50%;
+    margin-left: 10%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -26,8 +27,29 @@
     width: 600px;
 }
 
+.buscador{
+    display: inline-flex;
+}
+
+.linkHeader{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+.linkHeader.co{
+    margin-left: 20%;
+}
+
+
 .containerLogoRD{
     margin-top: 10px;
+}
+.escudo {
+    color: white;
+    padding-bottom: 5%;
+}
+.escudo img{
+    width: 50px;
 }
 
 @media (max-width: 880px) {

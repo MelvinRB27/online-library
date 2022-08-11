@@ -45,9 +45,7 @@
 
 @media (max-width: 880px) {
     .cntInfoUser{
-        display: flex;
         width: 22%;
-        margin-left: 10%;
         color: white;
     }
 }

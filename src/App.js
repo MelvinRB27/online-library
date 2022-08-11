@@ -13,13 +13,16 @@ import Register from './pages/register';
 import User from './components/User';
 import UpdateRegister from './pages/updateRegister';
 import SearchBook from './pages/SearchBook'
+import AddBook from './pages/addBook';
 import PageNotFound from './pages/paneNotFound';
-
+import ScrollToTopPage from './components/scrollToTop';
+import DetailB from './pages/detailBook';
 
 import { Routes, Route} from "react-router-dom";
 
 const App = () =>  (
   <div className='containerApp'>
+    <ScrollToTopPage />
     <Header />
     <BarNav/>
     <br/>
@@ -34,6 +37,8 @@ const App = () =>  (
       <Route path="/register" element={<Register />} />
       <Route path="/update_Register" element={<UpdateRegister />} />
       <Route path="/user" element={<User />} />
+      <Route path="/add-book" element={<AddBook />} />
+      <Route path="/detail-book/:id" element={<DetailB />} />
       <Route path="*" element={<PageNotFound/>} />
     </Routes>
     <br/>

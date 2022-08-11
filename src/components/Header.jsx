@@ -17,13 +17,14 @@ const Header = () => {
           <img alt='nameLogo' src={NameLogo} />
       </div>
 
-      {/* <div className="containerLogoRD col-lg-3 col-md-3 d-none d-sm-none d-lg-block">
+      <div className="containerLogoRD col-lg-3 col-md-3 d-none d-sm-none d-lg-block">
         <div className="eletop float-right">
           <div className="escudo">
             <img
-              src="https://ogtic.gob.do/wp-content/themes/optic/img/rd.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coat_of_arms_of_the_Dominican_Republic.svg/1024px-Coat_of_arms_of_the_Dominican_Republic.svg.png"
               alt="Escudo de la República Dominicana"
             />
+            República Dominicana
           </div>
           <div className="search">
             <form
@@ -39,10 +40,10 @@ const Header = () => {
                   type="search"
                   required=""
                   name="s"
-                  placeholder="Ingresa tu búsqueda"
+                  placeholder="Enter your search"
                 />
                 <div className="input-group-btn">
-                  <button
+                  <button className="btn btn-primary "
                     type="submit"
                   >
                     <i className="fa fa-search" aria-hidden="true"></i>
@@ -52,29 +53,11 @@ const Header = () => {
             </form>
           </div>
           <div className="buscador menuTop">
-            <ul>
-              <li
-                id="menu-item-7"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7"
-              >
-                <Link to="/">Inicio</Link>
-              </li>
-              <li
-                id="menu-item-7"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7"
-              >
-                <Link to="/">Mapa del sitio</Link>
-              </li>
-              <li
-                id="menu-item-149"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"
-              >
-                <Link to="/contact">Contacto</Link>
-              </li>
-            </ul>
+              <Link className="linkHeader" to="/">Home</Link>
+              <Link className="linkHeader co"to="/contact">Contact</Link>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
