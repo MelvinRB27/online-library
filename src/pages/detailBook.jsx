@@ -59,47 +59,45 @@ const DetailB = () => {
 
                     return(
                         <div className="divDetails" key={ID}>
-                            <div className="cntDetails">
-                                <div>
-                                    <img src={cover} alt="cover" />
-                                </div>
-
-                                <div className="cntDetailsInfor">
-                                    <h4>Information:</h4>
-
-                                   <h5><b>Author: </b>{author}</h5>
-                                   <h5><b>Title: </b>{title}</h5>
-                                   <h5><b>Publisher date: </b>{publisher_date}</h5>
-                                   <h5><b>Pages: </b>{pages}</h5>
-                                   <h5><b>Language: </b>{language}</h5>
-
-                                   <h4>Category:</h4>
-                                   {
-                                   categories.map(({
-                                    category_id,
-                                    name,
-                                    nicename
-                                   })=>{
-                                    return(
-                                        <h5>{name}</h5>
-
-                                    )
-                                   })
-                                   
-                                   }
-
-                                    <h4>Description:</h4>
-                                    <p className="col-md-15">
-                                        {content}
-                                    </p>
-                                    
-                                    <a href={url_download} target="_blank" className="btn btn-primary" rel="noreferrer">Donwload</a>
-                                 
-                                </div>
-
+                            <div className="cntImgBook">
+                                <img src={cover} alt="cover" />
                             </div>
 
+                            <div className="cntDetailsInfor">
+                                <h4>Information:</h4>
+
+                                <h5><b>Author: </b>{author}</h5>
+                                <h5><b>Title: </b>{title}</h5>
+                                <h5><b>Publisher date: </b>{publisher_date}</h5>
+                                <h5><b>Pages: </b>{pages}</h5>
+                                <h5><b>Language: </b>{language}</h5>
+                                <h4>Category:</h4>
+
+                                {
+                                categories.map(({
+                                category_id,
+                                name,
+                                nicename
+                                })=>{
+                                return(
+                                    <h5>{name}</h5>
+
+                                )
+                                })
+                                
+                                }
+                            </div>
+
+                            <div className="cntDescription">
+                                <h4>Description:</h4>
+                                <p className="col-md-15">
+                                    {content}
+                                </p>
+                                
+                                <a href={url_download} target="_blank" className="btn btn-primary" rel="noreferrer">Donwload</a>
+                            </div>
                         </div>
+
                     )
                 })
 
