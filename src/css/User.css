@@ -1,14 +1,19 @@
 .cntInfoUser{
-    margin: auto;
-    text-align: center;
     display: flex;
-    width: 30%;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
     color: white;
 }
 
-.card {
-    width: 500%;
+.co{
+    width: 30%;
 }
+
+.card {
+    width: 100%;
+}
+
 .cntData{
     color: white;
 }
@@ -45,7 +50,10 @@
 
 @media (max-width: 880px) {
     .cntInfoUser{
-        width: 22%;
-        color: white;
+        width: 100%;
+    }
+    
+    .co{
+        width: 80%;
     }
 }

@@ -1,8 +1,11 @@
 .containerSpinner{
+    width: 100%;
+    display: inline-block;
     text-align: center;
 }
 .containerSpinner h6{
-    color: white;
+  margin: auto;
+  color: white;
 }
 
 .spinner {
@@ -29,7 +32,9 @@
 
   @media (max-width: 880px) {
     .containerSpinner{
-      margin-left: 35%;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
   }
     .spinner {
       border: 4px solid rgba(0, 0, 0, 0.1);
@@ -38,7 +43,6 @@
       border-radius: 50%;
       border-left-color: #09f;
       border-right-color: red;
-      margin-left: 15%;
     
       animation: spin 1s ease infinite;
     }

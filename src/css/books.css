@@ -24,13 +24,17 @@
 
 .bookCardContainer{
     padding-left: 2%;
-    padding-right: 2%;
+    padding-right: 0%;
     display: inline-block;
+}
+
+.btns .btn{
+    font-size: 15px;
+    width: 100%;
 }
 
 .btns{
     display:grid;
-    width: auto;
     margin-top: 4%;
 }
 
@@ -41,19 +45,24 @@
 }
 
 @media (max-width: 880px) {
-   .bookCardContainer{
-    width: 100%;
-   }
- 
-    .btns{
-        width: 40%;
-		display: inline-block;
 
+    .btns{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20%;
     }
+
+    .btns .btn:hover{
+        font-size: 21px;
+        background-color: white;
+        color: black;
+    }
+
     .bookCardContainer{
-        padding-left: 2%;
-        padding-right: 2%;
+        width: 32%;
+        padding-left: 0%;
+        padding-right: 0%;
         display: inline-block;
-        left: 0;
     }
 }

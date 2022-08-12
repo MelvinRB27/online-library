@@ -135,6 +135,10 @@ h1 {
   border-right: 1px solid green;
 }
 
+.infoUser p:hover{
+  color: blue;
+}
+
 .infoUser h4{
   margin-right: 15px;
 }
@@ -188,6 +192,18 @@ p {
 		margin-left: 0;
 	}
 
+  .infoUser{
+    margin-left: 0%;
+    margin: auto;
+    display: inline-flex;
+    border-left: 1px solid red;
+    border-right: 1px solid green;
+  }
+
+  .navigation__list .btn{
+    margin: auto;
+    width: 50%;
+  }
 }
 
 @media (max-width: 880px) {

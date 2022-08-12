@@ -53,7 +53,7 @@ const UserPage = () => {
     return (
 
         <div className="cntInfoUser">
-                <div className="col-lg-3 col-sm-6">
+                <div className="co">
                     <div className="card hovercard">
                         <div className="cardheader">
 
