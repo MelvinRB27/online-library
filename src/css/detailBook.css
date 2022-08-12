@@ -44,11 +44,15 @@
     }
 
     .cntImgBook{
-        width: 30%;
+        width: 50%;
         margin-right: 0%;
         display: inline-table;
         box-shadow: 0 2px 15px 2px grey;
         margin-bottom: 10%
+    }
+
+    .cntImgBook img{
+        width: 100%;
     }
 
     .cntDetailsInfor{
