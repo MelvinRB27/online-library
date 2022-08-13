@@ -21,7 +21,7 @@
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	width: 100%;
+	width: 180px;
 }
 
 .product-image img{
@@ -39,7 +39,7 @@
     position: absolute;
     line-height: 1.8;
     text-align: left;
-    font-size: 95%;
+    font-size: 80%;
     cursor: no-drop;
     color: #FFF;
     height: 100%;
@@ -60,7 +60,7 @@
 @media (max-width: 880px) {
 
 	#containerCardBook{
-	box-shadow: 0 2px 5px 1px grey;
+		box-shadow: 0 2px 5px 1px grey;
         width: 90%;
         margin: auto;
 		height: 100%;
@@ -69,6 +69,7 @@
 	.bookCardCtn{
 		margin: auto;
 		width: 100%;
+		height: 190px;
 		display: inline-block;
 	}
 	.product-image {
@@ -79,5 +80,26 @@
 	.product-image img{
 		height: 100%;
 		width: 100%;
+	}
+
+	.product-image h2{
+		font-size: 15px;
+	}
+
+	.info {
+		background: rgba(27, 26, 26, 0.9);
+		font-family: 'Bree Serif', serif;
+		transition: all 0.3s ease-out;
+		transform: translateX(-100%);
+		position: absolute;
+		line-height: 1.8;
+		text-align: left;
+		font-size: 60%;
+		cursor: no-drop;
+		color: #FFF;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
 	}
 }

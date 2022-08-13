@@ -62,39 +62,40 @@ const Books = ({ url, title, } ) => {
         <div className="conataierBooks">
 
             <div className='containerDivBooks'>
-                {title && <div className='titleBOOK'> <div className='titlePage' > <img alt='book' src={bookName}/> </div> </div>}
+                {title && <div className='titleBOOK'> <div className='titlePage' > <img alt='book' src={bookName} data-aos="zoom-in-up"/> </div> </div>}
                 
                 {book.length === 0 && 
                     <Spinner />
                 }
                 {
                     book.map(({
-                        ID,
-                        author,
-                        title,
-                        publisher_date,
-                        pages,
-                        cover,
-                        url_download
+                        id,
+                        volumeInfo
                     }) => {
 
+                        let cover;
+                        let confirm = volumeInfo.imageLinks
+                        if (confirm !== undefined) {
+                            cover = volumeInfo.imageLinks.smallThumbnail
+                        }else{
+                            cover = bookName
+                        }
                         return(
-                            
-                            <div className="bookCardContainer" id={ID} key={ID}>
+                            <div className="bookCardContainer" data-aos="zoom-out-up" key={id} id={id}>
                                 
                                 <BookCard 
-                                    author={author}
-                                    title={title}
-                                    age={publisher_date}
-                                    pages={pages}
+                                    author={volumeInfo.authors}
+                                    title={volumeInfo.title}
+                                    age={volumeInfo.publishedDate}
+                                    pages={volumeInfo.pageCount}
                                     cover={cover}
                                 />
                                 <div className='btns'>
-                                    <a href={url_download} target='_blank' rel="noreferrer" className="btn btn-primary">DOWNLOAD</a>
-                                    <Link to={`/detail-book/${ID}`}  className="btn btn-success">DETAILS </Link>
+                                    <a href={volumeInfo.canonicalVolumeLink} target='_blank' rel="noreferrer" className="btn btn-primary">Get book</a>
+                                    <Link to={`/detail-book/${id}`}  className="btn btn-success">Details </Link>
                                     {userData.data.Rol === "Admin" ?
                                     (
-                                        <button className='btn btn-danger' onClick={() => deleteBook(ID)} >Delete</button>
+                                        <button className='btn btn-danger' onClick={() => deleteBook(id)} >Delete</button>
 
                                     ) : <></>
 

@@ -4,13 +4,13 @@ import axios from "axios";
 const GetDetail = (id) => {
     const [data, setData] = useState([])
     const [error, setError] = useState()
-
+    console.log("OKOK",data)
+    
     useEffect(() => {
-      // GET  request using axios inside useEffect React hook
       const getBooks = async() =>{
         await axios({
           method: 'get',
-          url: `https://www.etnassoft.com/api/v1/get/?id=`+id,
+          url: `https://www.googleapis.com/books/v1/volumes/`+id,
         })
         .then(function (response) {
           // console.log(response.data)
@@ -20,9 +20,11 @@ const GetDetail = (id) => {
           console.log(error);
           setError(error);
         });
-     }
-     getBooks()
-   }, [id]);
+    }
+      getBooks()
+    },[id])
+
+    
     return [data, error]
 }
 

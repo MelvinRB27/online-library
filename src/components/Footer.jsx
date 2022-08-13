@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => (
     
-    <div className="containerFooter">
+    <div className="containerFooter" data-aos="zoom-out-right">
         <footer className="footer-distributed">
 
             <div className="footer-left">

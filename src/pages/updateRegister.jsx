@@ -49,12 +49,8 @@ const Register = () => {
     return (
 
         <div className="registerContainer">
-            <div className="backgroundFormRegister">
-                <div className="shape"></div>
-                <div className="shape"></div>
-            </div>
             <h2><b>Update profile</b></h2>
-            <form className="formRegister" onSubmit={formSubmit}>
+            <form className="formRegister" onSubmit={formSubmit} data-aos="flip-up">
                 <img src={Logo} alt="Logo" /> <br/>
 
                 <label htmlFor='nameRegister'>Name</label>

@@ -5,13 +5,13 @@ import homeName from  '../img/home.png'
 import { Link } from "react-router-dom";
 const Banner = ({ login }) => (
     <div className="ctnBanner">
-        <div className='titlePageHome' > <img alt='book' src={homeName}/> </div>
+        <div className='titlePageHome' > <img alt='book' src={homeName} data-aos="zoom-in-up"/> </div>
     
         <div className="bannerContainer">
 
             {login ? (
                 <>
-                    <div className="responsive-banner first-login">
+                    <div className="responsive-banner first-login" data-aos="zoom-out-up">
                     <div className="container-envelope">
                         <img className="IMGBanner" src={imgBanner} alt="Logo" />
                         <div className="col-xs-12">
@@ -20,7 +20,7 @@ const Banner = ({ login }) => (
                     </div>
                     </div>
 
-                    <div className="responsive-banner second-login">
+                    <div className="responsive-banner second-login" data-aos="zoom-out-left">
                     <div className="container-envelope">
                         <img className="IMGBanner" src={imgBanner} alt="Logo" />
                         <div className="col-xs-12">
@@ -29,7 +29,7 @@ const Banner = ({ login }) => (
                     </div>
                     </div>
 
-                    <div className="responsive-banner third-login">
+                    <div className="responsive-banner third-login" data-aos="zoom-out-down">
                     <div className="container-envelope">
                         <img className="IMGBanner" src={imgBanner} alt="Logo" />
                         <div className="col-xs-12">

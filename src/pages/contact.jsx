@@ -41,10 +41,10 @@ const Contact = () => {
 
     return (
         <div className='containerContact'>
-            <div className='titlePage' > <img alt='book' src={contactName}/> </div>
+            <div className='titlePage' > <img alt='book' src={contactName} data-aos="zoom-in-up"/> </div>
             <br/>
 
-            <div className='contactNE'>
+            <div className='contactNE' data-aos="fade-down-right">
                 <h5>Phone</h5>
                 <p>809-000-0000</p>
 
@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
             <br/>
             <br/>
-            <form className='formContact' ref={form} onSubmit={sendEmail}>
+            <form className='formContact' ref={form} onSubmit={sendEmail} data-aos="fade-up">
 
                 <img src={Logo} alt="Logo" />
 

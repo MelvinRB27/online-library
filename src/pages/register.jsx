@@ -53,9 +53,9 @@ const Register = () => {
                 <div className="shape"></div>
                 <div className="shape"></div>
             </div> */}
-            <div className='titlePage' > <img alt='book' src={registerNAME}/> </div>
-            <h2><b>Register now</b>, to enjoy the best books online</h2>
-            <form className="formRegister" onSubmit={formSubmit}>
+            <div className='titlePage' > <img alt='book' src={registerNAME} data-aos="zoom-in-up"/> </div>
+            <h2 data-aos="zoom-in-up"><b>Register now</b>, to enjoy the best books online</h2>
+            <form className="formRegister" onSubmit={formSubmit} data-aos="flip-up">
                 <img src={Logo} alt="Logo" /> <br/>
 
                 <label htmlFor='nameRegister'>Name</label>

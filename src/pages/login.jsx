@@ -43,9 +43,9 @@ const Login = () => {
 
     return(
         <div className="loginContainer">
-        <div className='titlePage' > <img alt='book' src={loginNAME}/> </div>
+        <div className='titlePage' > <img alt='book' src={loginNAME} data-aos="zoom-in-up" /> </div>
             
-            <form className='formLogin' onSubmit={formSubmit}>
+            <form className='formLogin' onSubmit={formSubmit} data-aos="flip-up">
 
                 <img src={Logo} alt="Logo" />
 

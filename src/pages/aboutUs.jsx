@@ -5,9 +5,9 @@ import aboutName from '../img/about.png'
 
 const AboutUs = () => (
     <div className="mainAboutUs">
-        <div className='titlePage' > <img alt='book' src={aboutName}/> </div>
+        <div className='titlePage' > <img alt='book' src={aboutName} data-aos="zoom-in-up"/> </div>
         
-        <div className="containerAboutUs">
+        <div className="containerAboutUs" data-aos="fade-right">
             <div className="containerParagraph">
                 <p>
                 <b>Library MJ</b> is an online library that is responsible 
@@ -23,7 +23,7 @@ const AboutUs = () => (
 
         <br/>
 
-        <div className="ctnInfCEOS">
+        <div className="ctnInfCEOS" data-aos="fade-right">
             <div className="containerPhotoMelvin">
                 <div className='containerPerfil'>
                     <img src={MelvinPerfil} alt="Perfil Melvin"/>
@@ -47,7 +47,7 @@ const AboutUs = () => (
 
             </div>
 
-            <div className="containerPhotoJose">
+            <div className="containerPhotoJose" data-aos="fade-up">
                 <div className='containerPerfil'>
                     <img src={JosePerfil} alt="Perfil Melvin"/>
                 </div>

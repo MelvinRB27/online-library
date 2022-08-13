@@ -52,7 +52,7 @@ const UserPage = () => {
     
     return (
 
-        <div className="cntInfoUser">
+        <div className="cntInfoUser" data-aos="fade-down-right">
                 <div className="co">
                     <div className="card hovercard">
                         <div className="cardheader">

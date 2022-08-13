@@ -4,9 +4,13 @@ import {Link} from 'react-router-dom';
 
 import Books from './books';
 
+const formSubmit = (e) => {
+  e.preventDefault()
+};
+
 const SearchBook = () => {
 
-  const [category, setCategory] = useState("?category=programacion");
+  const [category, setCategory] = useState("programacion");
   let search = "";
 
   const userData = JSON.parse(window.localStorage.getItem('userData'))
@@ -18,8 +22,11 @@ const SearchBook = () => {
       <div className='Container-SearchB'>
     
         <div className='inputSearch'>
-          <input type="text" className='from-control' placeholder='Search' onChange={(event) => search = "?keyword="+event.target.value}/>
-          <button type="button" className="btn btn-outline-danger" onClick={() => setCategory(search)}>Search</button>
+          <form onSubmit={formSubmit}>
+            <input type="text" className='from-control' placeholder='Search' onChange={(event) => search = event.target.value}/>
+            <button type="submit" className="btn btn-outline-danger" onClick={() => setCategory(search)}>Search</button>
+          </form>
+          
           
         </div>
 
@@ -28,6 +35,7 @@ const SearchBook = () => {
               <option value="?category=programacion"> Programming </option>
               <option value="?category=libros_programacion"> Programming 2 </option>
               <option value="?category=arte-bellas-artes"> Art - Fine Arts </option>
+              <option value="?category=republica_dominicana"> Dominican Book</option>
               <option value="?category=ciencia"> Science </option>
               <option value="?category=comics"> Comics </option>
               <option value="?category=cine"> Cinema </option>
@@ -40,7 +48,7 @@ const SearchBook = () => {
               <option value="?category=idiomas"> Languages </option>
               <option value="?category=musica-biblioteca"> Music </option>
               <option value="?category=ajedrez"> Chess </option>
-              <option value="?category=libros_aspecotos_legales"> Legal Aspects </option>
+              <option value="?category=aspectos_legales"> Legal Aspects </option>
               <option value="?category=bases_de_datos"> Databases </option>
               <option value="?category=ensayos_y_novelas"> Essays / Novels	 </option>
               <option value="?category=filosofia-biblioteca"> Philosophy </option>

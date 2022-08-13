@@ -9,7 +9,6 @@ import AvatarJose from '../img/avatars/AvatarJose.png'
 
 import ButtonLogout from './ButtonLogout';
 import ValidateToken from '../js/validateToken';
-import ScrollToTop from "react-scroll-to-top";
 
 const Header = () => {
     const [errorToken] = ValidateToken()
@@ -34,7 +33,7 @@ const Header = () => {
     }
     
     return (    
-        <div className='conataierBarNav'>
+        <div className='conataierBarNav' data-aos="fade-down-right">
             <header className="header sticky sticky--top js-header">
                 <div className="grid">
                     <nav className="navigation">
@@ -74,7 +73,6 @@ const Header = () => {
                     </nav>
                 </div>
             </header>
-            <ScrollToTop />
         </div>
     
     );

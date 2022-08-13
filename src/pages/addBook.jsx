@@ -67,7 +67,7 @@ const AddBook = () => {
     return(
         <div className="ctnAddBook">
             
-            <form className='formAddBook' onSubmit={formSubmit}>
+            <form className='formAddBook' onSubmit={formSubmit} data-aos="flip-up">
 
                 <label htmlFor="Author">Author</label>
                 <input type="text" placeholder="Author" id="Author" required
