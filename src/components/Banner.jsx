@@ -44,8 +44,8 @@ const Banner = ({ login }) => (
                 </>
             ): (
                 <>
-                    <div className="responsive-banner first">
-                    <div className="container-envelope" data-aos="zoom-out-up">
+                    <div className="responsive-banner first" data-aos="zoom-out-up">
+                    <div className="container-envelope">
                         <img className="IMGBanner" src={imgBanner} alt="Logo" />
                         <div className="col-xs-12">
                             <p>Log in and keep enjoying your great benefits of reading</p>
