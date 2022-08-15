@@ -45,7 +45,7 @@ const Banner = ({ login }) => (
             ): (
                 <>
                     <div className="responsive-banner first">
-                    <div className="container-envelope">
+                    <div className="container-envelope" data-aos="zoom-out-up">
                         <img className="IMGBanner" src={imgBanner} alt="Logo" />
                         <div className="col-xs-12">
                             <p>Log in and keep enjoying your great benefits of reading</p>
@@ -54,7 +54,7 @@ const Banner = ({ login }) => (
                     </div>
                     </div>
 
-                    <div className="responsive-banner second">
+                    <div className="responsive-banner second" data-aos="zoom-out-left">
                     <div className="container-envelope">
                     <img className="IMGBanner" src={imgBanner} alt="Logo" />
                     <div className="col-xs-12">
@@ -66,7 +66,7 @@ const Banner = ({ login }) => (
                     </div>
                     </div>
 
-                    <div className="responsive-banner third">
+                    <div className="responsive-banner third" data-aos="zoom-out-down">
                     <div className="container-envelope">
                     <img className="IMGBanner" src={imgBanner} alt="Logo" />
                     <div className="col-xs-12">
