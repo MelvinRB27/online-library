@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
 import BarNav from './components/BarNav';
-import Header from './components/Header';
 
 //pages
 import Home from './pages/home';
@@ -34,7 +33,6 @@ const App = () => {
     <div className='containerApp'>
       <ScrollToTop />
       <ScrollToTopPage />
-      <Header />
       <BarNav/>
       <br/>
       <br/>
