@@ -4,11 +4,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #080710;
+.registerContainer{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 5%;
+
 }
 
+h2{
+    padding-bottom: 2%;
+}
 .registerContainer h2, h4{
+    padding-top: 2%;
     text-align: center;
     color: #e5e5e5;
 }
@@ -19,38 +29,14 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 50%;
+    top: 70%;
 }
-.backgroundFormRegister .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -100px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
+
 .formRegister{
-    height: 760px;
-    width: 400px;
+    margin: auto;
+    height: 1150px;
+    width: 450px;
     background-color: rgba(255,255,255,0.13);
-    position: relative;
-    top: 50%;
-    left: 35%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
@@ -59,26 +45,33 @@ body{
 }
 .formRegister *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
     letter-spacing: 0.px;
     outline: none;
     border: none;
 }
 .formRegister h3{
+    color: white;
     font-size: 27px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
 
+.formRegister img {
+    border-radius: 50%;
+    width: 40%;
+    padding: 0%;
+}
+
 .formRegister label{
-    display: block;
-    margin-top: 30px;
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
     font-size: 16px;
     font-weight: 500;
 }
-.formRegister input{
-    color: #080710;
+.formRegister .ipt{
+    color: white;
     display: block;
     height: 50px;
     width: 100%;
@@ -89,6 +82,11 @@ body{
     font-size: 14px;
     font-weight: 300;
 }
+
+.form-check-label{
+    padding: 5%;
+}
+
 ::placeholder{
     color: #e5e5e5;
 }
@@ -103,25 +101,20 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-.socialRegister{
-  margin-top: 30px;
-  display: flex;
-}
-.socialRegister div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.socialRegister div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.socialRegister .fb{
-  margin-left: 25px;
-}
-.socialRegister i{
-  margin-right: 4px;
+
+@media (max-width: 880px) {
+
+    .backgroundFormRegister .shape{
+        height: 127px;
+        width: 127px;
+    }
+
+    .socialLogin .fb{
+        width: 100px;
+      }
+    
+    .formRegister{
+        width: 300px;
+    }
+
 }

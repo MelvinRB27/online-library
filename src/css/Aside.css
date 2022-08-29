@@ -1,0 +1,21 @@
+.containerAside{
+    width: 15%;
+    margin-top: 7%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+button:hover{
+    background-color: rgb(6, 49, 70);
+    color: white;
+}
+
+@media (max-width: 880px) {
+
+	.containerAside{
+        width: 50%;
+        margin-top: 7%;
+        margin-left: 25%;
+    }
+}

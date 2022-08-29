@@ -1,3 +1,77 @@
+.titleBOOK{
+    text-align: center;
+}
+
 .titlePage{
-    text-align: center;    
+    margin: auto;
+}
+
+.titlePage img{
+    width: 250px;
+}
+
+.conataierBooks{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.conataierDivBooks{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.bookCardContainer{
+    padding-left: 2%;
+    padding-right: 0%;
+    display: inline-block;
+}
+
+.btns .btn{
+    font-size: 15px;
+    width: 100%;
+}
+
+.btns{
+    display:grid;
+    margin-top: 4%;
+}
+
+.btns .btn:hover{
+    font-size: 30px;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 880px) {
+
+    .btns{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+
+    .btns .btn:hover{
+        font-size: 21px;
+        background-color: white;
+        color: black;
+    }
+
+    
+    .conataierBooks{
+        text-align: center;
+        margin-bottom: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .bookCardContainer{
+        width: 32%;
+        padding-left: 0%;
+        padding-right: 0%;
+        display: inline-block;
+    }
 }

@@ -1,17 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
+.containerFooter{
+	display: inline-table;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	height: auto;
+}
 * {
   font-family: Open Sans;
 }
 
 .footer-logo img{
+	margin: auto;
     display: block;
-    width: 75%;
-	border: 10px;
+    width: 60%;
+	border: 50%;
 	border-radius: 50%;
 }
 .footer-distributed .footer-left p{
-	margin-right: 22%;
+	margin: auto;
+	margin-top: 1%;
 }
 
 .footer-distributed{
@@ -19,6 +27,7 @@
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
+	max-width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
@@ -34,9 +43,8 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 30%;
+	width: 20%;
 }
-
 
 /* The company logo */
 
@@ -56,6 +64,7 @@
 	color:  #ffffff;
 	margin: 5px 0 12px;
 	padding: 0;
+	padding-bottom: 2%;
 }
 
 .footer-distributed .footer-links a{
@@ -76,7 +85,7 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 50%;
+	width: 35%;
 }
 
 .footer-distributed .footer-center i{
@@ -134,7 +143,12 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
+	margin-left: 2%;
 	width: 20%;
+}
+
+.footer-right img{
+	margin-left: 100px;
 }
 
 .iconCEO{
@@ -202,19 +216,20 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media screen and (max-width: 880px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
-
+	
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
+		margin: auto;
 		margin-bottom: 40px;
-		text-align: center;
+		
 	}
 
 	.footer-distributed .footer-center i{

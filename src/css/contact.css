@@ -1,23 +1,46 @@
-.titlePage{
-    text-align: center;    
+
+.containerContact{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 5%;
+
+}
+.containerContact h2{
+    text-align: center;
+}
+.contactNE{
+    margin: auto;
+    display: inline-table;
+    border-top: 5px solid red;
+    border-bottom: 5px solid green;
 }
 
-.contactNumber{
-    display: inline-block;
+.contactNE h5{
+    text-align: center;
+    color: red;
 }
 
 .formContact{
-    display: inline-block;
-    height: 600px;
+    margin: auto;
+    height: 850px;
     width: 600px;
     background-color: rgba(255,255,255,0.13);
-    position:relative;
     border-radius: 10px;
-    left: 36%;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 100px;
 }
+
+.formContact img{
+    border-radius: 50%;
+    width: 40%;
+    padding: 0%;
+}
+
 .formContact label{
     display: block;
     color: white;
@@ -26,7 +49,7 @@
     color: white;
     display: block;
     height: 50px;
-    width: 100%;
+    width: 400px;
     background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 0 10px;
@@ -34,6 +57,7 @@
     font-size: 14px;
     font-weight: 300;
 }
+
 
 .formContact textarea{
     color: white;
@@ -46,10 +70,43 @@
 }
 
 .formContact button{
-    display: block;
-    font-size: 15px;
+    margin-top: 10px;
+    width: 55%;
+    background-color: #0003b4;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
     font-weight: 600;
-    background-color: blue;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 880px) {
+    .titlePage{
+        margin: auto;
+    }
+
+    .contactNE{
+        display: inline-table;
+        margin-bottom: 20px;
+        border-top: 5px solid red;
+        border-bottom: 5px solid green;
+    }
+
+    .formContact img{
+        border-radius: 50%;
+        width: 40%;
+        padding: 0%;
+        margin-top: 40px;
+    }
+
+    .formContact{
+        width: 300px;
+        padding: 0px 15px;
+    }
+
+    .formContact input{
+        width: 200px;
+    }
 
 }

@@ -1,16 +1,17 @@
 import '../css/aboutUs.css';
 import MelvinPerfil from '../img/MelvinPerfil2.jpg';
 import JosePerfil from '../img/JosePerfil.jpg';
+import aboutName from '../img/about.png'
 
 const AboutUs = () => (
-    <>
-        <h1 className='titlePage'><b>About us</b></h1>     
-
-        <div className="containerAboutUs">
+    <div className="mainAboutUs">
+        <div className='titlePage' > <img alt='book' src={aboutName} data-aos="zoom-in-up"/> </div>
+        
+        <div className="containerAboutUs" data-aos="fade-right">
             <div className="containerParagraph">
                 <p>
-                <b>Library MJ</b> is an online library that is responsible for 
-                providing different types of books, so that users can rent, buy and share it.
+                <b>Library MJ</b> is an online library that is responsible 
+                    for providing different types of books, so that users can download and share them.
 
                 <br/>
                 <br/>
@@ -22,7 +23,7 @@ const AboutUs = () => (
 
         <br/>
 
-        <div>
+        <div className="ctnInfCEOS" data-aos="fade-right">
             <div className="containerPhotoMelvin">
                 <div className='containerPerfil'>
                     <img src={MelvinPerfil} alt="Perfil Melvin"/>
@@ -33,7 +34,7 @@ const AboutUs = () => (
                     
                     <p className="footer-company-about"> 
                         Software developer with knowledge in Java, c#, 
-                        python, JavaScript, Vue.js, React HTML. 
+                        Python, JavaScript, GO, Vue.js, React HTML. 
                         I have worked several projects as Frontend, also with the Backend. 
                     </p>
                 </div>
@@ -46,7 +47,7 @@ const AboutUs = () => (
 
             </div>
 
-            <div className="containerPhotoJose">
+            <div className="containerPhotoJose" data-aos="fade-up">
                 <div className='containerPerfil'>
                     <img src={JosePerfil} alt="Perfil Melvin"/>
                 </div>
@@ -56,7 +57,7 @@ const AboutUs = () => (
                     
                     <p className="footer-company-about"> 
                         Software developer with knowledge in Java, c#, 
-                        python, JavaScript, Vue.js, React HTML. 
+                        JavaScript, React HTML. 
                         I have worked several projects as Frontend, also with the Backend. 
                     </p>
                 </div>
@@ -71,7 +72,7 @@ const AboutUs = () => (
 
         </div>
         
-    </>
+    </div>
 );
 
 export default AboutUs;

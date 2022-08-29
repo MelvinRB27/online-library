@@ -1,0 +1,14 @@
+#root{
+    width: 100%;
+    height: auto;
+    min-height:100vh;
+    max-width: 100%;
+    position: relative;
+    background-color:rgb(6, 0, 20);
+    background: linear-gradient(
+        rgb(4, 1, 49),
+        black
+    );
+
+}
+body{width:100%;}

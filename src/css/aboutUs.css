@@ -1,9 +1,16 @@
-.titlePage{
-    text-align: center;    
+.mainAboutUs{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5%;
 }
 
+.containerAboutUs{
+    text-align: center;
+}
 .containerParagraph{
-    margin-left: 37%;
+    margin:auto;
     width: 25%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
@@ -13,26 +20,32 @@
     color: white;
     text-align: center;
 }
+.ctnInfCEOS{
+    display: flex;
+
+}
 
 .containerPhotoMelvin{
-    display: inline-block;
+    margin: auto;
+    height: 500px;
     width: 25%;
-    margin-left: 15%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
 
 .containerPhotoJose{
-    padding-top: 3.8%;
-    display: inline-block;
+    margin: auto;
+    height: 500px;
     width: 25%;
     margin-left: 15%;
     border-top: 5px solid red;
     border-bottom: 5px solid green;
 }
+.containerPhotoJose img{
+    height: 230px;
+}
 
 .containerPerfil img{
-    margin-left: 32%;
     width: 50%;
     padding: 2%;
 }
@@ -60,4 +73,29 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+    .containerParagraph{
+        margin-left: 15%;
+        width: 75%;
+        border-top: 5px solid red;
+        border-bottom: 5px solid green;
+    }
+
+    .ctnInfCEOS{
+        display: inline;
+    }
+
+    .containerPhotoMelvin{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .containerPhotoJose{
+        width: 75%;        
+        margin: auto;
+    }
 }

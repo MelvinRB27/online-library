@@ -1,0 +1,68 @@
+.containerBookDitals{
+    width: 100%;
+    text-align: center;
+}
+.divDetails{
+    text-align: center;
+    width: 100%;
+}
+
+.cntImgBook{
+    width: 20%;
+    height: 350px;
+    margin-right: 10%;
+    display: inline-table;
+	box-shadow: 0 2px 15px 2px grey;
+    margin-bottom: 10%
+}
+
+.cntImgBook img{
+    width: 100%;
+    height: 350px;
+
+}
+
+.cntDetailsInfor{
+    width: 50%;
+    display: inline-table;
+    text-align: left;
+    color: white;
+    padding: 2%;
+    border: 2px solid rgba(255, 255, 255, 0.186);
+    margin-bottom: 10%
+}
+
+.cntDetailsInfor b{
+    color: red;
+}
+
+.cntDescription{
+    display: inline-block;
+    margin-top: 5%;
+    padding: 3%;
+    border: 2px solid rgba(255, 255, 255, 0.186);
+    width: 70%;
+    margin-bottom: 10%
+}
+@media (max-width: 880px) {
+
+    .cntDetails{
+        margin: auto;
+    }
+
+    .cntImgBook{
+        width: 50%;
+        margin-right: 0%;
+        display: inline-table;
+        box-shadow: 0 2px 15px 2px grey;
+        margin-bottom: 10%
+    }
+
+    .cntImgBook img{
+        width: 100%;
+    }
+
+    .cntDetailsInfor{
+        width: 65%;
+    }
+}

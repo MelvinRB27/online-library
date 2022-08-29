@@ -1,0 +1,105 @@
+
+.bookCardCtn{
+	margin: auto;
+	display: inline-block;
+	width: 100%;
+	height: 280px;
+}
+
+#containerCardBook{
+	box-shadow: 0 2px 15px 2px grey;
+	background: rgba(255, 255, 255, 0.90);
+	border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	margin-top: 55px;
+}
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 180px;
+}
+
+.product-image img{
+	height: 100%;
+	width: 100%;
+}
+
+/* #containerCardBook img {width: 100%;height: 100%;} */
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 80%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center; font-size:25px;}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+@media (max-width: 880px) {
+
+	#containerCardBook{
+		box-shadow: 0 2px 5px 1px grey;
+        width: 90%;
+        margin: auto;
+		height: 100%;
+    }
+
+	.bookCardCtn{
+		margin: auto;
+		width: 100%;
+		height: 190px;
+		display: inline-block;
+	}
+	.product-image {
+		height: 100%;
+		width: 100%;
+	}
+
+	.product-image img{
+		height: 100%;
+		width: 100%;
+	}
+
+	.product-image h2{
+		font-size: 15px;
+	}
+
+	.info {
+		background: rgba(27, 26, 26, 0.9);
+		font-family: 'Bree Serif', serif;
+		transition: all 0.3s ease-out;
+		transform: translateX(-100%);
+		position: absolute;
+		line-height: 1.8;
+		text-align: left;
+		font-size: 60%;
+		cursor: no-drop;
+		color: #FFF;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+}
