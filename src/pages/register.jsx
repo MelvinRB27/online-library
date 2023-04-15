@@ -1,49 +1,49 @@
-import { Link, useNavigate } from 'react-router-dom';
+// import { Link, useNavigate } from 'react-router-dom';
 import '../css/register.css';
-import Logo from '../img/Library (3).png';
-import registerNAME from '../img/register.png'
+// import Logo from '../img/Library (3).png';
+// import registerNAME from '../img/register.png'
 
-import { useState, useEffect } from 'react';
-import registerApi from '../js/registerAPI';
+// import { useState, useEffect } from 'react';
+// import registerApi from '../js/registerAPI';
 
-import ValidateToken from '../js/validateToken';
-import Swal from 'sweetalert2';
+// import ValidateToken from '../js/validateToken';
+// import Swal from 'sweetalert2';
 
 const Register = () => {
 
-    const [name, setName] = useState("")
-    const [lastName, setLastName] = useState("")
-    const [username, setUserName] = useState("")
-    const [rol, setRol] = useState("")
-    const [gender, setGender] = useState("")
-    const [password, setPassword] = useState("")
-    const [passwordConfirm, setPasswordConfirm] = useState("")
+    // const [name, setName] = useState("")
+    // const [lastName, setLastName] = useState("")
+    // const [username, setUserName] = useState("")
+    // const [rol, setRol] = useState("")
+    // const [gender, setGender] = useState("")
+    // const [password, setPassword] = useState("")
+    // const [passwordConfirm, setPasswordConfirm] = useState("")
 
-    const [errorToken] = ValidateToken()
+    // const [errorToken] = ValidateToken()
 
-    let redirect = useNavigate()
+    // let redirect = useNavigate()
 
-    const alertSuccess = (txt) => {
-        Swal.fire({
-        icon: 'success',
-        title: 'Login success',
-        text: txt,
-        showConfirmButton: false,
-        timer: 1500
-    })}
+    // const alertSuccess = (txt) => {
+    //     Swal.fire({
+    //     icon: 'success',
+    //     title: 'Login success',
+    //     text: txt,
+    //     showConfirmButton: false,
+    //     timer: 1500
+    // })}
 
-    const formSubmit = e => {
-        e.preventDefault(); //esto previene que el form se mande. 
-    };
+    // const formSubmit = e => {
+    //     e.preventDefault(); //esto previene que el form se mande. 
+    // };
 
   
-    useEffect(() => {
-        if (!errorToken) {
-            alertSuccess("You are already logged in")
-            return redirect('/')
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[errorToken])
+    // useEffect(() => {
+    //     if (!errorToken) {
+    //         alertSuccess("You are already logged in")
+    //         return redirect('/')
+    //     }
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // },[errorToken])
   
 
     return (
@@ -53,7 +53,8 @@ const Register = () => {
                 <div className="shape"></div>
                 <div className="shape"></div>
             </div> */}
-            <div className='titlePage' > <img alt='book' src={registerNAME} data-aos="zoom-in-up"/> </div>
+            <h1>TEMPORALMENTE FUERA DE SERVICIO</h1>
+            {/* <div className='titlePage' > <img alt='book' src={registerNAME} data-aos="zoom-in-up"/> </div>
             <h2 data-aos="zoom-in-up"><b>Register now</b>, to enjoy the best books online</h2>
             <form className="formRegister" onSubmit={formSubmit} data-aos="flip-up">
                 <img src={Logo} alt="Logo" /> <br/>
@@ -109,7 +110,7 @@ const Register = () => {
                
             </form>
             
-            <h4>You already have an account <b> <Link to="/login">log in here</Link> </b></h4>
+            <h4>You already have an account <b> <Link to="/login">log in here</Link> </b></h4> */}
         </div>
     )
 }

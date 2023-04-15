@@ -3,52 +3,52 @@ import '../css/books.css';
 import BookCard from '../cards/BookCard';
 import bookName from '../img/books.png'
 
-import {Link, useNavigate} from 'react-router-dom';
-import { useEffect } from 'react';
+import {Link, /*useNavigate*/} from 'react-router-dom';
+// import { useEffect } from 'react';
 
-import ValidateToken from '../js/validateToken';
+// import ValidateToken from '../js/validateToken';
 
 import Spinner from '../components/Spinner';
 
 import useApiPublic from '../hooks/useApiPublic';
 
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 
 const Books = ({ url, title, } ) => {
 
     const [book, error] = useApiPublic(url);
 
-    const [errorToken] = ValidateToken()
+    // const [errorToken] = ValidateToken()
 
-    const userData = JSON.parse(window.localStorage.getItem('userData'))
+    // const userData = JSON.parse(window.localStorage.getItem('userData'))
 
-    function deleteBook(id) {
-        var x = document.getElementById(id);
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
+    // function deleteBook(id) {
+    //     var x = document.getElementById(id);
+    //     if (x.style.display === "none") {
+    //         x.style.display = "block";
+    //     } else {
+    //         x.style.display = "none";
+    //     }
+    // }
 
-    const redirect = useNavigate()
+    // const redirect = useNavigate()
 
-    const alertError = (txt) => {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: txt,
-            })
-        }
+    // const alertError = (txt) => {
+    //     Swal.fire({
+    //         icon: 'error',
+    //         title: 'Oops...',
+    //         text: txt,
+    //         })
+    //     }
     
-    useEffect(() => {
-        if (errorToken) {
-            alertError("You must log in or create an account")
-            return redirect('/login')
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[errorToken])
+    // useEffect(() => {
+    //     if (errorToken) {
+    //         alertError("You must log in or create an account")
+    //         return redirect('/login')
+    //     }
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // },[errorToken])
 
     
     if (error) { return (
@@ -93,13 +93,13 @@ const Books = ({ url, title, } ) => {
                                 <div className='btns'>
                                     <a href={volumeInfo.canonicalVolumeLink} target='_blank' rel="noreferrer" className="btn btn-primary">Get book</a>
                                     <Link to={`/detail-book/${id}`}  className="btn btn-success">Details </Link>
-                                    {userData.data.Rol === "Admin" ?
+                                    {/* {userData.data.Rol === "Admin" ?
                                     (
                                         <button className='btn btn-danger' onClick={() => deleteBook(id)} >Delete</button>
 
                                     ) : <></>
 
-                                    }
+                                    } */}
 
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../css/SearchB.css';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 import Books from './books';
 
@@ -13,7 +13,7 @@ const SearchBook = () => {
   const [category, setCategory] = useState("programacion");
   let search = "";
 
-  const userData = JSON.parse(window.localStorage.getItem('userData'))
+  // const userData = JSON.parse(window.localStorage.getItem('userData'))
 
 
   return (
@@ -56,7 +56,7 @@ const SearchBook = () => {
               <option value="?category=marketing_y_business"> Marketing / Business	 </option>
           </select>
         </div>
-        {userData && userData.data.Rol === "Admin" ? (<Link to="/add-book" className="btn btn-dark">Add book</Link>): <></>}
+        {/* {userData && userData.data.Rol === "Admin" ? (<Link to="/add-book" className="btn btn-dark">Add book</Link>): <></>} */}
       </div>
 
       <br/>

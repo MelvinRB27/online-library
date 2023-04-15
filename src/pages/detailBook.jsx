@@ -3,11 +3,11 @@ import bookName from '../img/books.png'
 
 import React from 'react'
 import GetDetail from '../hooks/apiDatilBook'
-import ValidateToken from '../js/validateToken';
-import {useNavigate} from 'react-router-dom';
+// import ValidateToken from '../js/validateToken';
+// import {useNavigate} from 'react-router-dom';
 
-import { useEffect } from 'react';
-import Swal from 'sweetalert2';
+// import { useEffect } from 'react';
+// import Swal from 'sweetalert2';
 import Spinner from '../components/Spinner';
 
 
@@ -19,25 +19,25 @@ const DetailB = () => {
     // eslint-disable-next-line no-unused-vars
     const [book, error] = GetDetail(id)
 
-    const [errorToken] = ValidateToken()
+    // const [errorToken] = ValidateToken()
 
-    const redirect = useNavigate()
+    // const redirect = useNavigate()
 
-    const alertError = (txt) => {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: txt,
-            })
-        }
+    // const alertError = (txt) => {
+    //     Swal.fire({
+    //         icon: 'error',
+    //         title: 'Oops...',
+    //         text: txt,
+    //         })
+    //     }
 
-    useEffect(() => {
-        if (errorToken) {
-            alertError("You must log in or create an account")
-            return redirect('/login')
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[errorToken])
+    // useEffect(() => {
+    //     if (errorToken) {
+    //         alertError("You must log in or create an account")
+    //         return redirect('/login')
+    //     }
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // },[errorToken])
 
     //this is for validate if the book have a cover, if not have a cover add for default
     let cover;
