@@ -1,51 +1,51 @@
 import '../css/login.css';
 
-import {Link, useNavigate} from 'react-router-dom';
-import Logo from '../img/Library (3).png';
-import loginNAME from '../img/login.png'
-import { useState, useEffect } from 'react';
-import loginApi from '../js/loginAPI';
+// import {Link, useNavigate} from 'react-router-dom';
+// import Logo from '../img/Library (3).png';
+// import loginNAME from '../img/login.png'
+// import { useState, useEffect } from 'react';
+// import loginApi from '../js/loginAPI';
 
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
-import ValidateToken from '../js/validateToken';
+// import ValidateToken from '../js/validateToken';
 
 const Login = () => {
 
-    const [userName, setUserName] = useState()
-    const [password, setPassword] = useState()
-    const [errorToken] = ValidateToken()
+    // const [userName, setUserName] = useState()
+    // const [password, setPassword] = useState()
+    // const [errorToken] = ValidateToken()
 
     //redirect page
-    let redirect = useNavigate()
+    // let redirect = useNavigate()
 
     //alert for  user
-    const alertSuccess = (txt) => {
-        Swal.fire({
-        icon: 'success',
-        title: 'Login success',
-        text: txt,
-        showConfirmButton: false,
-        timer: 1500
-    })}
+    // const alertSuccess = (txt) => {
+    //     Swal.fire({
+    //     icon: 'success',
+    //     title: 'Login success',
+    //     text: txt,
+    //     showConfirmButton: false,
+    //     timer: 1500
+    // })}
 
-    useEffect(() => {
-        if (!errorToken) {
-            alertSuccess("You are already logged in")
-            return redirect('/')
-        }
+    // useEffect(() => {
+    //     if (!errorToken) {
+    //         alertSuccess("You are already logged in")
+    //         return redirect('/')
+    //     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[errorToken])
+    // },[errorToken])
 
-    const formSubmit = (e) => {
-        e.preventDefault()
-    };
+    // const formSubmit = (e) => {
+    //     e.preventDefault()
+    // };
 
     return(
         <div className="loginContainer">
-        <div className='titlePage' > <img alt='book' src={loginNAME} data-aos="zoom-in-up" /> </div>
-            
-            <form className='formLogin' onSubmit={formSubmit} data-aos="flip-up">
+        {/* <div className='titlePage' > <img alt='book' src={loginNAME} data-aos="zoom-in-up" /> </div> */}
+            <h1>TEMPORALMENTE FUERA DE SERVICIO</h1>
+            {/* <form className='formLogin' onSubmit={formSubmit} data-aos="flip-up">
 
                 <img src={Logo} alt="Logo" />
 
@@ -65,7 +65,7 @@ const Login = () => {
 
             </form>
 
-            <h4>Don't have an account yet? , <b> <Link to="/register">register here</Link> </b> </h4>
+            <h4>Don't have an account yet? , <b> <Link to="/register">register here</Link> </b> </h4> */}
         
         </div> 
 )

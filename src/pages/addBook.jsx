@@ -2,11 +2,11 @@ import '../css/addBook.css';
 import PostApi from '../hooks/usePost';
 
 import {useNavigate} from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
-import ValidateToken from '../js/validateToken';
+// import ValidateToken from '../js/validateToken';
 
 const AddBook = () => {
 
@@ -18,7 +18,7 @@ const AddBook = () => {
     const [pdf, setPdf] = useState()
    
 
-    const [errorToken] = ValidateToken()
+    // const [errorToken] = ValidateToken()
 
     const userData = JSON.parse(window.localStorage.getItem('userData'))
 
@@ -37,21 +37,21 @@ const AddBook = () => {
     let redirect = useNavigate()
 
     //alert for  user
-    const alertError = (txt) => {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: txt,
-            })
-        }
+    // const alertError = (txt) => {
+    //     Swal.fire({
+    //         icon: 'error',
+    //         title: 'Oops...',
+    //         text: txt,
+    //         })
+    //     }
     
-    useEffect(() => {
-        if (errorToken) {
-            alertError("You must log in or create an account")
-            return redirect('/login')
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[errorToken])
+    // useEffect(() => {
+    //     if (errorToken) {
+    //         alertError("You must log in or create an account")
+    //         return redirect('/login')
+    //     }
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // },[errorToken])
 
     const formSubmit = (e) => {
         e.preventDefault()
