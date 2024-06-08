@@ -7,10 +7,10 @@ import Home from './pages/home';
 import Offers from './pages/offers';
 import AboutUs from './pages/aboutUs';
 import Contact from './pages/contact';
-import Login from './pages/login';
-import Register from './pages/register';
-import User from './components/User';
-import UpdateRegister from './pages/updateRegister';
+// import Login from './pages/login';
+// import Register from './pages/register';
+// import User from './components/User';
+// import UpdateRegister from './pages/updateRegister';
 import SearchBook from './pages/SearchBook'
 import AddBook from './pages/addBook';
 import PageNotFound from './pages/paneNotFound';
