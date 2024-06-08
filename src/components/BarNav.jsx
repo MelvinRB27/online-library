@@ -2,36 +2,36 @@ import { NavLink, Link } from 'react-router-dom';
 import '../css/BarNav.css';
 import Logo from '../img/Library (3).png';
 
-import AvatarMen from '../img/avatars/AvatarMen.png'
-import AvatarWoman from '../img/avatars/AvatarWoman.png'
-import AvatarHuascar from '../img/avatars/AvatarHusacar.png'
-import AvatarMelvin from '../img/avatars/AvatarMelvin.png'
-import AvatarJose from '../img/avatars/AvatarJose.png'
+// import AvatarMen from '../img/avatars/AvatarMen.png'
+// import AvatarWoman from '../img/avatars/AvatarWoman.png'
+// import AvatarHuascar from '../img/avatars/AvatarHusacar.png'
+// import AvatarMelvin from '../img/avatars/AvatarMelvin.png'
+// import AvatarJose from '../img/avatars/AvatarJose.png'
 
-import ButtonLogout from './ButtonLogout';
-import ValidateToken from '../js/validateToken';
+// import ButtonLogout from './ButtonLogout';
+// import ValidateToken from '../js/validateToken';
 
 const Header = () => {
-    const [errorToken] = ValidateToken()
+    // const [errorToken] = ValidateToken()
 
-    const dataUser = JSON.parse(window.localStorage.getItem('userData'))
-    let perfil;
+    // const dataUser = JSON.parse(window.localStorage.getItem('userData'))
+    // let perfil;
      
     //This is to know the gender of the registered person 
     //and put an avatar according to their gender
-    if (!errorToken){
+    // if (!errorToken){
         
-        if (dataUser.data.Gender === 'Woman') {
-            perfil = AvatarWoman
-         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Huascar'  && dataUser.data.Rol === 'Admin'){
-            perfil  = AvatarHuascar
-         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'José' && dataUser.data.Rol === 'Admin'){
-            perfil  = AvatarJose
-         }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Melvin' && dataUser.data.Rol === 'Admin'){
-            perfil  = AvatarMelvin
-         }
-         else perfil = AvatarMen
-    }
+    //     if (dataUser.data.Gender === 'Woman') {
+    //         perfil = AvatarWoman
+    //      }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Huascar'  && dataUser.data.Rol === 'Admin'){
+    //         perfil  = AvatarHuascar
+    //      }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'José' && dataUser.data.Rol === 'Admin'){
+    //         perfil  = AvatarJose
+    //      }else if (dataUser.data.Gender === 'Men' && dataUser.data.Name === 'Melvin' && dataUser.data.Rol === 'Admin'){
+    //         perfil  = AvatarMelvin
+    //      }
+    //      else perfil = AvatarMen
+    // }
     
     return (    
         <div className='conataierBarNav' data-aos="fade-down-right">
