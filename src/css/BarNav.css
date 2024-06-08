@@ -152,6 +152,7 @@ h1 {
 
 .navigation__list--inline {
   display: flex;
+  justify-content: center;
   gap: 1.5em;
 }
 

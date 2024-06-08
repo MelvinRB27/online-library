@@ -44,7 +44,7 @@ const Header = () => {
                                     <img alt="logo"  src={Logo} />
                                 </Link>
                             </div>
-                            <li className="navigation__item"><NavLink className="active navigation__link " to="/"><p>Home</p></NavLink></li>
+                            {/* <li className="navigation__item"><NavLink className="active navigation__link " to="/"><p>Home</p></NavLink></li> */}
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/books" ><p>Books</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/offers"><p>Offers</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/aboutUs"><p>About</p></NavLink></li>
