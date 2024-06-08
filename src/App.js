@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import BarNav from './components/BarNav';
 
 //pages
-import Home from './pages/home';
+// import Home from './pages/home';
 import Offers from './pages/offers';
 import AboutUs from './pages/aboutUs';
 import Contact from './pages/contact';
