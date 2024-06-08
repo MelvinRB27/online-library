@@ -49,7 +49,7 @@ const Header = () => {
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/offers"><p>Offers</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/aboutUs"><p>About</p></NavLink></li>
                             <li className="navigation__item"><NavLink className="active navigation__link" to="/contact"><p>Contact</p></NavLink></li>
-                           {
+                           {/* {
                            
                            errorToken &&  <><li className="navigation__item"><NavLink className="active navigation__link" to="/register"><p>Register</p></NavLink></li>
                              <li className="navigation__item"><NavLink className="active navigation__link" to="/login"><p>Login</p></NavLink></li>
@@ -69,7 +69,7 @@ const Header = () => {
                                     <ButtonLogout />
                                 </>
                             
-                            }
+                            } */}
                         </ul>
                     </nav>
                 </div>

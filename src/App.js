@@ -42,10 +42,10 @@ const App = () => {
         <Route path="/offers" element={<Offers />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/update_Register" element={<UpdateRegister />} />
-        <Route path="/user" element={<User />} />
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/register" element={<Register />} /> */}
+        {/* <Route path="/update_Register" element={<UpdateRegister />} /> */}
+        {/* <Route path="/user" element={<User />} /> */}
         <Route path="/add-book" element={<AddBook />} />
         <Route path="/detail-book/:id" element={<DetailB />} />
         <Route path="*" element={<PageNotFound/>} />
